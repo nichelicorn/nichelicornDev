@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 const Layout = ({ children }) => {
   return (
