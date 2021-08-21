@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
 
 const PostsPage = ({ data: { allMdx } }) => {
   console.log(allMdx);
   return (
-    <div>
+    <Layout>
       {allMdx.edges.map(({ node }) => {
         return (
           <article key={node.slug}>
@@ -14,7 +15,7 @@ const PostsPage = ({ data: { allMdx } }) => {
           </article>
         );
       })}
-    </div>
+    </Layout>
   );
 };
 

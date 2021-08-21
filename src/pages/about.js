@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 // need gatsby link to link to other pages!
 
 const IndexPage = () => {

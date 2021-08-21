@@ -131,7 +131,7 @@ const links = [
 const IndexPage = () => {
   // this IndexPage is a React component to render the whole page
   return (
-    <Layout style={pageStyles}>// this will render on all pages wrapped in a Layout tag; start all pages with this tag; additional styles will flow out of this Layout
+    <Layout>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         🌊 Hey! You have discovered how rad this can be!
