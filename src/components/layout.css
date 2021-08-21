@@ -608,6 +608,18 @@ pre tt:after {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 .fancyColor {
   color: fuchsia;
+}
+
+[aria-current] {
+  font-weight: bold;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 1.5em;
+  padding: 8px;
 }
