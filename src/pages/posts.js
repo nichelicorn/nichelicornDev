@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 
 const PostsPage = ({ data: { allMdx } }) => {
-  console.log(allMdx);
+  console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
       {allMdx.edges.map(({ node }) => {
