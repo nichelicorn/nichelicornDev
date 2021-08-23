@@ -11,16 +11,16 @@ const StyledFooter = styled.footer`
 
 `;
 
-const StyledHeading = styled.h3`
-  padding: 20px;
-  background-color: cornflowerblue;
-  color: black;
-`;
+// const StyledHeading = styled.h3`
+//   padding: 20px;
+//   background-color: cornflowerblue;
+//   color: black;
+// `;
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledHeading>This is my heading 🧭</StyledHeading>
+      {/* <StyledHeading>This is my heading 🧭</StyledHeading> */}
       Hello, I am a footer 🛼
       {/* <span className="purple">🍆 purple thing</span> */}
     </StyledFooter>
