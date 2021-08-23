@@ -3,22 +3,28 @@ import Layout from "../components/Layout";
 import "../components/layout.css";
 
 // styles
+
 const pageStyles = {
   color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
+
 const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  margin: 33,
+  // marginBottom: 64,
+  textAlign: "center",
+  // maxWidth: 320,
 }
+
 const headingAccentStyles = {
   color: "#663399",
 }
+
 const paragraphStyles = {
   marginBottom: 48,
 }
+
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
@@ -26,10 +32,12 @@ const codeStyles = {
   fontSize: "1.25rem",
   borderRadius: 4,
 }
+
 const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 }
+
 const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
@@ -127,28 +135,29 @@ const links = [
   },
 ]
 
-// markup
+// Component to render
 const IndexPage = () => {
-  // this IndexPage is a React component to render the whole page
   return (
     <Layout>
-      <title>Home Page</title>
+      <title>nichelicornDev</title>
       <h1 style={headingStyles}>
-        🌊 Hey! You have discovered how rad this can be!
+      {/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS."
+      https://reactjs.org/docs/dom-elements.html#style */}
+      🌊 Welcome to nichelicorn.dev 👩‍💻
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
+        {/* <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
-        </span>
+        </span> */}
       </h1>
-      <p style={paragraphStyles}>
+      {/* <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
         <span role="img" aria-label="Sunglasses smiley emoji">
           😎
         </span>
-      </p>
-      <ul style={listStyles}>
+      </p> */}
+      {/* <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
             style={linkStyle}
@@ -179,7 +188,7 @@ const IndexPage = () => {
       <img
         alt="Gatsby G Logo"
         src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+      /> */}
     </Layout>
   )
 }
