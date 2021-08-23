@@ -18,15 +18,15 @@ const Layout = ({ children }) => {
         <li>
           <Link to="/posts">Posts</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/til">Today I Learned</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/skating">Skating</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/fandf">Flora and Fauna</Link>
-        </li>
+        </li> */}
       </ul>
       <main>{children}</main>
       <Footer />
