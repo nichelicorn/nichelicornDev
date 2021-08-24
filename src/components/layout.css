@@ -12,14 +12,16 @@ aside,
 details,
 figcaption,
 figure,
-footer,
-header,
 main,
 menu,
 nav,
 section,
 summary {
   display: block;
+}
+footer,
+header {
+  display: flex;
 }
 audio,
 canvas,
@@ -320,6 +322,9 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;

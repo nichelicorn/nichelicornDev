@@ -6,10 +6,9 @@ const StyledHeader = styled.header`
   padding: 20px;
   background-color: cornflowerblue;
   color: white;
-  ${'' /* .purple {
-    color: purple;
-  } */}
-
+  ${'' /* display: "flex"; */}
+  ${'' /* flex-direction: "row";
+  justify-content: "space-evenly"; */}
 `;
 
 // const StyledHeading = styled.h3`
