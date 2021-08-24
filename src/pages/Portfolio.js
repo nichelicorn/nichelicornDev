@@ -2,6 +2,17 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 
+const headingStyles = {
+  margin: "1.5rem",
+  textAlign: "center",
+}
+
+const paragraphStyles = {
+  margin: "1rem",
+  textAlign: "center",
+  fontFamily: "Verdana",
+}
+
 const PortfolioPage = () => {
   // console.log("PortfolioPage allMdx <>>>", allMdx); 
   // don't want to use allMdx - this is pulling all mdx files (the blog posts)
@@ -11,7 +22,8 @@ const PortfolioPage = () => {
     <Layout>
         {/* return ( */}
           <article>
-            <h3>🚧 Portfolio will be presented here 💼</h3>
+            <h3 style={headingStyles}>🚧 Portfolio will be presented here 💼</h3>
+            <p style={paragraphStyles}>👩‍💻 visit nichelicorn on <Link to="https://github.com/nichelicorn">GitHub</Link> 🐙😸</p>
           </article>
         {/* ); */}
     </Layout>
