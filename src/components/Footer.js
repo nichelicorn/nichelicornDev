@@ -21,8 +21,11 @@ const Footer = () => {
   return (
     <StyledFooter>
       {/* <StyledHeading>This is my heading 🧭</StyledHeading> */}
-      Hello, I am a footer 🛼
+      {/* Hello, I am a footer 🛼 */}
       {/* <span className="purple">🍆 purple thing</span> */}
+      <p>Made with ❤️, 🧐, 🍵</p>
+      <p>© Nichele Dunn 2021</p>
+      {/* <sub>hey, that rhymes</sub> */}
     </StyledFooter>
   );
 };

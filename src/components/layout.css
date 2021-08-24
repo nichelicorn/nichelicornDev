@@ -5,11 +5,11 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* color: hsla(0, 0%, 0%, 0.8); */
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -18,28 +18,41 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 small {
   font-size: 80%;
 }
+
 img {
   border-style: none;
   max-width: 100%;
   margin: .5rem;
 }
+
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 1.5rem;
   background-color: cornflowerblue;
   color: white;
 }
+
+header > p {
+
+}
+
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
+
 p {
   line-height: 150%;
   padding: 1rem;
 }
+
 [aria-current] {
   font-weight: bold;
   background-color: turquoise;
@@ -47,7 +60,6 @@ p {
   font-size: 1.5em;
   padding: 8px;
 }
-
 
 @media only screen and (max-width: 480px) {
   html {

@@ -21,6 +21,7 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <header>
+      <p>🌊 welcome to nichelicorn.dev!</p>
       <ul>
         <li>
           <Link to="/">Home</Link>
