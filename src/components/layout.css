@@ -10,7 +10,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif;
+  font: 1rem Verdana, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -18,7 +18,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  /* color: hsla(0, 0%, 0%, 0.8); */
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -26,7 +26,6 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-
 }
 /* article,
 aside,
@@ -55,13 +54,13 @@ video {
   height: 0;
 } */
 /* The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. */
-progress {
+/* progress {
   vertical-align: baseline;
-}
-[hidden],
+} */
+/* [hidden],
 template {
   display: none;
-}
+} */
 /* a {
   color: rgba(0, 0 , 0, .8);
   background-color: transparent;
@@ -127,18 +126,19 @@ sup {
 img {
   border-style: none;
   max-width: 100%;
-  margin-left: 0;
+  margin: .5rem;
+  /* margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem; */
 }
-svg:not(:root) {
+/* svg:not(:root) {
   overflow: hidden;
-}
+} */
 /* code,
 kbd,
 pre,
@@ -177,7 +177,7 @@ select {
 } */
 /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
 /* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
-[type="reset"],
+/* [type="reset"],
 [type="submit"],
 button,
 html [type="button"] {
@@ -189,13 +189,13 @@ html [type="button"] {
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
-}
-[type="button"]:-moz-focusring,
+} */
+/* [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
+} */
 /*  */
 /* fieldset {
   border: 1px solid silver;
@@ -224,22 +224,24 @@ button:-moz-focusring {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 } */
-[type="search"] {
+
+/* searchbar styles -- keep these for future use! */
+/* [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
-}
-[type="search"]::-webkit-search-cancel-button,
+} */
+/* [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-::-webkit-input-placeholder {
+} */
+/* ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
-}
-::-webkit-file-upload-button {
+} */
+/* ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
-}
+} */
 
 /* this is organized kind of weird ... there is another section of <html> styling on line 1 */
 /* html {
@@ -429,16 +431,17 @@ ul {
   margin-bottom: 1.45rem;
 } */
 p {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   line-height: 150%;
-  margin-left: 0;
+  padding: 1rem;
+  /* margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem; */
 }
 /* figure {
   margin-left: 0;
