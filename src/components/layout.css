@@ -26,6 +26,11 @@ img {
   max-width: 100%;
   margin: .5rem;
 }
+header {
+  padding: 1.5rem;
+  background-color: cornflowerblue;
+  color: white;
+}
 ul {
   display: flex;
   flex-direction: row;

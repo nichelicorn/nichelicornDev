@@ -2,14 +2,15 @@ import * as React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const StyledHeader = styled.header`
-  padding: 20px;
-  background-color: cornflowerblue;
-  color: white;
-  ${'' /* display: "flex"; */}
-  ${'' /* flex-direction: "row";
-  justify-content: "space-evenly"; */}
-`;
+// Header styling
+// const StyledHeader = styled.header`
+//   padding: 20px;
+//   background-color: cornflowerblue;
+//   color: white;
+// }
+// `;
+
+
 
 // const StyledHeading = styled.h3`
 //   padding: 20px;
@@ -19,7 +20,7 @@ const StyledHeader = styled.header`
 
 const Header = () => {
   return (
-    <StyledHeader>
+    <header>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -34,7 +35,7 @@ const Header = () => {
           <Link to="/posts">Posts</Link>
         </li>
       </ul>
-    </StyledHeader>
+    </header>
   );
 };
 
