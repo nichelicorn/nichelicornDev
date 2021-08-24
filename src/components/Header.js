@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 // Header styling
 // const StyledHeader = styled.header`
@@ -20,7 +20,7 @@ import styled from "styled-components";
 
 const Header = () => {
   return (
-    <header>
+    <header className="hdr">
       <p>🌊 welcome to nichelicorn.dev!</p>
       <ul>
         <li>

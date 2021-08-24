@@ -1,5 +1,8 @@
 .hdr {
-  padding: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1.5rem;
   background-color: cornflowerblue;
   color: white;
 }
