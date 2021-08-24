@@ -1,11 +1,32 @@
+/* * {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+} */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em georgia, serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+
 }
 /* article,
 aside,
@@ -23,16 +44,17 @@ summary {
 header {
   display: flex;
 } */
-audio,
+/* audio,
 canvas,
 progress,
 video {
   display: inline-block;
-}
-audio:not([controls]) {
+} */
+/* audio:not([controls]) {
   display: none;
   height: 0;
-}
+} */
+/* The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. */
 progress {
   vertical-align: baseline;
 }
@@ -40,40 +62,56 @@ progress {
 template {
   display: none;
 }
-a {
+/* a {
   color: rgba(0, 0 , 0, .8);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-}
-a:active,
+} */
+/* a:active,
 a:hover {
   outline-width: 0;
-}
-abbr[title] {
+} */
+/* abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
-}
-b,
+} */
+/* b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
-}
-dfn {
+} */
+/* The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence.  */
+/* dfn {
   font-style: italic;
-}
-h1 {
+} */
+/* h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-mark {
+    margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2.25rem;
+  line-height: 1.1;
+} */
+/* mark {
   background-color: #ff0;
   color: #000;
-}
+} */
+/* The <small> HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small. */
 small {
   font-size: 80%;
 }
-sub,
+/* The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. */
+/* sub,
 sup {
   font-size: 75%;
   line-height: 0;
@@ -85,47 +123,60 @@ sub {
 }
 sup {
   top: -0.5em;
-}
+} */
 img {
   border-style: none;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
 }
 svg:not(:root) {
   overflow: hidden;
 }
-code,
+/* code,
 kbd,
 pre,
 samp {
-  /* font-family: monospace, monospace; */
+  font-family: monospace, monospace;
   font-size: 1em;
-}
-figure {
+} */
+/* The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit. */
+/* figure {
   margin: 1em 40px;
-}
-hr {
+} */
+/* The <hr> HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. */
+/* hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
-button,
+} */
+/* button,
 input,
 optgroup,
 select,
 textarea {
   font: inherit;
   margin: 0;
-}
-optgroup {
+} */
+/* optgroup {
   font-weight: 700;
-}
-button,
+} */
+/* button,
 input {
   overflow: visible;
-}
-button,
+} */
+/* button,
 select {
   text-transform: none;
-}
+} */
+/* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
+/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
 [type="reset"],
 [type="submit"],
 button,
@@ -145,31 +196,34 @@ button::-moz-focus-inner {
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-fieldset {
+/*  */
+/* fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
-}
-legend {
+} */
+/* The <legend> HTML element represents a caption for the content of its parent <fieldset>. */
+/* legend {
   box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
   padding: 0;
   white-space: normal;
-}
-textarea {
+} */
+/* The <textarea> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. */
+/* textarea {
   overflow: auto;
-}
-[type="checkbox"],
+} */
+/* [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
-}
-[type="number"]::-webkit-inner-spin-button,
+} */
+/* [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
-}
+} */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
@@ -186,12 +240,15 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-html {
+
+/* this is organized kind of weird ... there is another section of <html> styling on line 1 */
+/* html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-}
-* {
+} */
+/* move these to the top */
+/* * {
   box-sizing: inherit;
 }
 *:before {
@@ -199,8 +256,9 @@ html {
 }
 *:after {
   box-sizing: inherit;
-}
-body {
+} */
+/* body styling is also on line 17*/
+/* body {
   color: hsla(0, 0%, 0%, 0.8);
   font-weight: normal;
   word-wrap: break-word;
@@ -209,8 +267,9 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-}
-img {
+} */
+/* img styling also on line 114 */
+/* img {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -220,8 +279,8 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-h1 {
+} */
+/* h1 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -235,8 +294,8 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
-}
-h2 {
+} */
+/* h2 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -250,8 +309,8 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
-}
-h3 {
+} */
+/* h3 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -265,8 +324,8 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
-}
-h4 {
+} */
+/* h4 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -280,8 +339,8 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
-}
-h5 {
+} */
+/* h5 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -295,8 +354,8 @@ h5 {
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
   line-height: 1.1;
-}
-h6 {
+} */
+/* h6 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -310,8 +369,9 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
-}
-hgroup {
+} */
+/* The <hgroup> HTML element represents a multi-level heading for a section of a document. It groups a set of <h1>–<h6> elements. */
+/* hgroup {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -320,7 +380,7 @@ hgroup {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 ul {
   display: flex;
   flex-direction: row;
@@ -336,7 +396,7 @@ ul {
   list-style-position: outside;
   list-style-image: none; */
 }
-ol {
+/* ol {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -347,8 +407,8 @@ ol {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
-}
-dl {
+} */
+/* dl {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -357,8 +417,8 @@ dl {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-dd {
+} */
+/* dd {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -367,7 +427,7 @@ dd {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 p {
   font-size: 1.25rem;
   line-height: 150%;
@@ -380,7 +440,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-figure {
+/* figure {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -389,8 +449,8 @@ figure {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-pre {
+} */
+/* pre {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -402,8 +462,8 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
-}
-table {
+} */
+/* table {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -416,8 +476,8 @@ table {
   line-height: 1.45rem;
   border-collapse: collapse;
   width: 100%;
-}
-fieldset {
+} */
+/* fieldset {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -426,8 +486,8 @@ fieldset {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-blockquote {
+} */
+/* blockquote {
   margin-left: 1.45rem;
   margin-right: 1.45rem;
   margin-top: 0;
@@ -436,8 +496,8 @@ blockquote {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-form {
+} */
+/* form {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -446,8 +506,9 @@ form {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-noscript {
+} */
+/*  	The <noscript> HTML element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser. */
+/* noscript {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -456,8 +517,9 @@ noscript {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-iframe {
+} */
+/* The <iframe> HTML element represents a nested browsing context, embedding another HTML page into the current one. */
+/* iframe {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -466,8 +528,8 @@ iframe {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-hr {
+} */
+/* hr {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -479,8 +541,8 @@ hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
-}
-address {
+} */
+/* address {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -489,19 +551,19 @@ address {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-b {
+} */
+/* b {
   font-weight: bold;
-}
-strong {
+} */
+/* strong {
   font-weight: bold;
-}
-dt {
+} */
+/* dt {
   font-weight: bold;
-}
-th {
+} */
+/* th {
   font-weight: bold;
-}
+} */
 /* li {
   margin-bottom: calc(1.45rem / 2);
 } */
@@ -521,47 +583,49 @@ th {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 } */
-blockquote *:last-child {
-  /* margin-bottom: 0; */
-}
-li *:last-child {
-  /* margin-bottom: 0; */
-}
-p *:last-child {
-  /* margin-bottom: 0; */
-}
-li > p {
+/* blockquote *:last-child {
+  margin-bottom: 0;
+} */
+/* li *:last-child {
+  margin-bottom: 0;
+} */
+/* p *:last-child {
+  margin-bottom: 0;
+} */
+/* li > p {
   margin-bottom: calc(1.45rem / 2);
-}
-code {
+} */
+/* code {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
-kbd {
+} */
+/* The <kbd> HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although this is not mandated by the HTML standard. */
+/* kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
-samp {
+} */
+/*  	The <samp> HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console). */
+/* samp {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
-abbr {
+} */
+/* abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
-}
-acronym {
+} */
+/* acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
-}
-abbr[title] {
+} */
+/* abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
   text-decoration: none;
-}
-thead {
+} */
+/* thead {
   text-align: left;
-}
-td,
+} */
+/* td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
@@ -573,40 +637,40 @@ th {
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
-}
-th:first-child,
+} */
+/* th:first-child,
 td:first-child {
   padding-left: 0;
-}
-th:last-child,
+} */
+/* th:last-child,
 td:last-child {
   padding-right: 0;
-}
-tt,
+} */
+/* tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-}
-pre code {
+} */
+/* pre code {
   background: none;
   line-height: 1.42;
-}
-code:before,
+} */
+/* code:before,
 code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
   content: " ";
-}
-pre code:before,
+} */
+/* pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
-}
+} */
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -619,7 +683,7 @@ pre tt:after {
 
 [aria-current] {
   font-weight: bold;
-  background-color: darkslategrey;
+  background-color: turquoise;
   color: white;
   font-size: 1.5em;
   padding: 8px;
