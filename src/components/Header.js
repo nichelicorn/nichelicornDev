@@ -21,8 +21,11 @@ import { Link } from "gatsby";
 const Header = () => {
   return (
     <header className="hdr">
-      <p>🌊 welcome to nichelicorn.dev!</p>
-      <ul>
+      <div className="nameTile">
+        <h2>Nichele D · 🦄</h2>
+        <h5>technology · nature · art</h5>
+      </div>
+      <ul  className="hdrList">
         <li>
           <Link to="/">Home</Link>
         </li>

@@ -43,8 +43,8 @@ img {
 } */
 
 ul {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   /* justify-content: space-evenly; */
 }
 
@@ -54,11 +54,12 @@ p {
 }
 
 [aria-current] {
+  /* font-family: 'Beth Ellen', cursive; */
   font-weight: bold;
   background-color: turquoise;
   color: white;
   font-size: 1.5em;
-  padding: 8px;
+  padding: .5rem;
 }
 
 @media only screen and (max-width: 480px) {
