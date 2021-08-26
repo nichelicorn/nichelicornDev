@@ -1,8 +1,8 @@
 import * as React from "react"
 import Layout from "../components/Layout";
-import "../components/layout.css";
-import "../components/header.css";
-import "../components/footer.css";
+import "../styles/layout.css";
+import "../styles/header.css";
+import "../styles/footer.css";
 
 // styles
 

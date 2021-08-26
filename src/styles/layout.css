@@ -60,7 +60,9 @@ body {
 } */
 
 [aria-current] {
-  font-family: 'Beth Ellen', cursive;
+  /* font-family: ; */
+  font-family: 'Pacifico', cursive;
+  /* font-family: 'Beth Ellen', cursive; */
   font-weight: bold;
   background-color: turquoise;
   color: white;
