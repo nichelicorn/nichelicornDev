@@ -1,3 +1,8 @@
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,15 +24,16 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-small {
-  font-size: 80%;
-}
 
-img {
+/* small {
+  font-size: 80%;
+} */
+
+/* img {
   border-style: none;
   max-width: 100%;
   margin: .5rem;
-}
+} */
 
 /* header {
   display: flex;
@@ -42,19 +48,19 @@ img {
 
 } */
 
-ul {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-evenly; */
-}
+/* ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
 
-p {
+/* p {
   line-height: 150%;
   padding: 1rem;
-}
+} */
 
 [aria-current] {
-  /* font-family: 'Beth Ellen', cursive; */
+  font-family: 'Beth Ellen', cursive;
   font-weight: bold;
   background-color: turquoise;
   color: white;
