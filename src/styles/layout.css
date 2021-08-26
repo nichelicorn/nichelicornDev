@@ -1,17 +1,18 @@
 html, body {
-  min-height: 100%;
+  font-family: "Verdana", sans-serif;
   margin: 0;
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 1rem Verdana, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
 
 body {
+  color: hsla(0, 0%, 0%, 0.8);
+  height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +25,26 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+.content {
+  /* border: 1px solid fuchsia; */
+  min-height: 76vh;
+}
+
+[aria-current] {
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Courier New', serif;
+  font-weight: bold;
+  background-color: turquoise;
+  color: white;
+  font-size: 1.5em;
+  padding: .5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
 
 /* small {
   font-size: 80%;
@@ -59,22 +80,6 @@ body {
   padding: 1rem;
 } */
 
-[aria-current] {
-  /* font-family: ; */
-  font-family: 'Pacifico', cursive;
-  /* font-family: 'Beth Ellen', cursive; */
-  font-weight: bold;
-  background-color: turquoise;
-  color: white;
-  font-size: 1.5em;
-  padding: .5rem;
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 
 /* The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. */
 /* progress {
@@ -132,5 +137,5 @@ button:-moz-focusring {
   font: inherit;
 } */
 
-
-
+/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
+ 
