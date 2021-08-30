@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   /* justify-content: space-evenly; */
-  background-color: cornflowerblue;
+  background-color:rosybrown;
   color: white;
   height: 7vh;
   margin: 0;
@@ -28,6 +28,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  color: white;
+  list-style: circle;
   margin: 0;
   padding: .5rem;
   width: 65%;

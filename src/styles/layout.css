@@ -32,13 +32,13 @@ body {
 }
 
 .mainContent {
-  border: 1px solid fuchsia;
+  border: 1px solid aquamarine;
   /* min-height: 76vh; */
   width: 70%;
 }
 
 .sideContent {
-  background-color: azure;
+  background-color:darkseagreen;
   border: 1px solid lime;
   /* min-height: 76hv; */
   width: 30%;
@@ -48,8 +48,8 @@ body {
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Courier New', serif;
   font-weight: bold;
-  background-color: turquoise;
-  color: white;
+  background-color:mistyrose;
+  color: rgb(48, 24, 7);
   font-size: 1.5em;
   padding: .5rem;
 }
