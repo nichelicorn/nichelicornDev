@@ -25,9 +25,23 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-.content {
-  /* border: 1px solid fuchsia; */
-  min-height: 76vh;
+.contentWrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContent {
+  border: 1px solid fuchsia;
+  /* min-height: 76vh; */
+  width: 70%;
+}
+
+.sideContent {
+  background-color: azure;
+  border: 1px solid lime;
+  /* min-height: 76hv; */
+  width: 30%;
 }
 
 [aria-current] {

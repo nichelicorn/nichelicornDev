@@ -6,7 +6,10 @@ const Layout = ({ children }) => {
   return (
     <section>
       <Header />
-      <main className="content">{children}</main>
+      <div className="contentWrapper">
+        <main className="mainContent">{children}</main>
+        <section className="sideContent">Sidebar Content</section>
+      </div>
       <Footer />
     </section>
   );
