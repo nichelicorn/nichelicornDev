@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   /* justify-content: space-evenly; */
+  /* position:sticky; */
   background-color:rosybrown;
   color: white;
   height: 7vh;

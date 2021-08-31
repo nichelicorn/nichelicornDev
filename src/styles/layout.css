@@ -44,6 +44,13 @@ body {
   width: 30%;
 }
 
+code {
+  background-color: lightgray;
+  padding: .2em;
+  text-overflow: inherit;
+  width: 80%;
+}
+
 [aria-current] {
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Courier New', serif;
