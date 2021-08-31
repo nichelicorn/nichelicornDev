@@ -9,7 +9,7 @@ import "../styles/layout.css";
 
 # JavaScript Concepts : Dot and Bracket Notation
 
-insert byline here
+##### 📆 31 Aug 2021
 
 Dot and bracket notation... What are they for? Why would I use one or the other? Is it even important to know the differences? How do they work? Did you know that dot and bracket notation can also be referred to as property accessors? 
 
@@ -22,14 +22,14 @@ Beyond that tidbit, here are some other interesting things about this useful Jav
 Let's start with the syntax. We have two options when using property accessors.
 
 ##### Dot `.` notation : 
-<div className="codeDiv">
+```
 object.property;
-</div>
+```
 
 ##### Bracket `[]` notation :
-<div className="codeDiv">
+```
 object["property"];
-</div>
+```
 
 The `property` is the key you are attempting to access within an object. Property accessors give us the ability to obtain these values. Neat!
 
@@ -44,10 +44,10 @@ Remember, when using dot notation, one must follow the standard naming rules for
 
 
 ##### If the answer is `no`, use bracket notation!
-If you don't know the keynames, you can use brackets! You can use *variables* to identify unknown or weird keynames using the syntax `object[property_name]`, where `property_name` can be represented by a string or Symbol. Because JavaScript relies upon type coercion, these values will be coerced into strings.
+If you don't know the keynames, use brackets! You can use *variables* to identify unknown or weird keynames using the syntax `object[property_name]`, where `property_name` can be represented by a string or Symbol. Because JavaScript relies upon type coercion, these values will be coerced into strings.
 
 ### Dot Notation
-To get some practice, let's create an object. Copy this code into your console to follow along.
+🏁 To get some practice, let's create an object. Copy this code into your console to follow along.
 ```
 const jediOne = {
   name: "Ahsoka Tano",
@@ -57,7 +57,7 @@ const jediOne = {
 
 When thinking about the properties a Jedi might have, it's safe to assume they will each have a name and a homeworld, so we can use those to check out some dot notation.
 
-Let's get the name property first.
+🏁 Let's get the name property first. To access the value of the name property, type the following in the console: the object name, then a dot, then the word name. Or, just copy this code:
 
 ```
 jediOne.name;
@@ -65,47 +65,42 @@ jediOne.name;
 
 This should log the Jedi's name, [Ahsoka Tano](https://starwars.fandom.com/wiki/Ahsoka_Tano)!
 
-Try it out with the homeworld. Having trouble? Follow the example for getting the value of the name and try again! You may also be getting some hints from your console, and that's great! You can use those prompts to help you learn too!
+🌶 Try it out with the homeworld. Having trouble? Follow the example for getting the value of the name and try again. You may also be getting some hints from your console, and that's great! You can use those prompts to help you learn too.
 
 Let's move on to bracket notation.
 
 ### Bracket notation
-Bracket notation can be used much like dot notation when the key is known. This code should give you the same string you logged using the dot notation:
+🏁  Bracket notation can be used much like dot notation when you know the key. This code should give you the same string you accessed using the dot notation:
 ```
 jediOne["name"];
 ```
+Beyond matching the usefulness of dots, bracket notation gives you even more power for accessing and manipulating values dynamically. When using bracket notation, the key name does not need to be known! If a variable is created, JavaScript has the power to search an object for a matching property, and return that value if a match is found. This gives flexibility in how we interact with objects.
 
-Beyond copying the usefulness of dots, bracket notation provides more flexibility when it comes to accessing values dynamically. 
-
-Interestingly, when using bracket notation, the key name does not need to be known! Using a variable, JavaScript has the power to search an object for a matching property, and return that value if a match is found. This gives us some flexibility with how we interact with objects.
-
-Let's see if we can discover the Jedi's homeworld using this power (and pretend you haven't already examined this property).
+🏁 Let's see if we can discover the Jedi's homeworld using this power (and pretend you haven't already examined this property). Type or copy the following code in the console:
 ```
 const mysteryPlanet = "homeworld";
 
 jediOne[mysteryPlanet];
 ```
-This should give you the name of Ahsoka's homeworld, Shili! 
+This should give you the name of Ahsoka's homeworld, Shili!
 
-📌 Take note of the syntax when calling on a variable to do the work of the accessor -- you don't need quotations `" "`! JavaScript knows that in this example, mysteryPlanet is a variable, and it's not looking for a matching key in the JediOne object. What happens if you *do* include the quotations?
+📌 Take note of the syntax when calling on a variable to do the work of the accessor -- you don't need quotations! JavaScript knows that in this example, mysteryPlanet is a variable, and it's not looking for a matching key in the jediOne object. What happens if you *do* include the quotations?
 
-Next, let's add a new property to our `jediOne` object.
-
+### Adding properties with brackets
+🏁 Next, let's add a new property to our `jediOne` object using bracket notation. To do this, you'll want to follow this example:
 ```
 jediOne["jediMaster"] = "Anakin Skywalker";
 ```
-
 Now, `jediOne` should have a third property!
 
-Try adding additional properties - you can follow the same process, or try writing a function to do the work for you!
+🏁 Try adding additional properties - you can follow the same process using bracket notation, or try it with dot notation instead. 🌶 If you want to get spicy, write a function to do the work for you!
 
 ### Chaining and nesting
 Dot and bracket notation can also be chained or nested.
 
-Let's add another property to `jediOne` to test out these tools.
-
+🏁 Let's add another property to `jediOne` to test out these tools.
 ```
-jediOne["lightsabers"] = [
+jediOne.lightsabers = [
   {
     hilt: "silver",
     blade: "green",
@@ -121,22 +116,22 @@ jediOne["lightsabers"] = [
     blade: "white",
     pair: true
   }
-]
+];
 ```
+Ahsoka should now have an array of lightsabers! And we can get their values by using some fancy notation.
 
-You should now have an array of lightsabers that Ahsoka can use! And we can get their values by using some fancy notation.
-
-Try accessing the pair of white lightsabers and logging this string in the console: "Ahsoka Tano has a pair of lightsabers with white blades."
+🏁 Try accessing the pair of white lightsabers and logging this string in the console: "Ahsoka Tano has a pair of lightsabers with white blades."
 
 What did you come up with?
 
 Was it this? 
 
 ```
-`${jediOne.name} has a pair of lightsabers with ${jediOne["lightsabers"][2].blade} blades.`
+`${jediOne.name} has a pair of lightsabers with 
+${jediOne.lightsabers[2].blade} blades.`
 ```
 
-Or maybe something else? Did you get the result you wanted! If you did, yay!!! 🎉 If you didn't, that's okay -- try again! Follow the error messages. 🕵️‍♀️
+Or maybe something else? Did you get the result you wanted! If you did, yay!!! 🎉 Keep experimenting with this object and see what else you can do. If you aren't getting the results you want, try something else. And if you're getting red in the console, follow the error messages. 🕵️‍♀️
 
 <sub>
 Thank you for reading my post! 💚 Check out these resources if you want more info about this topic.

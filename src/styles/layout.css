@@ -1,5 +1,6 @@
 html, body {
   font-family: "Verdana", sans-serif;
+  font-size: 1.1rem;
   margin: 0;
   text-align: justify;
 }
@@ -50,11 +51,12 @@ body {
 
 code {
   background-color: lightgray;
-  /* margin: 1rem; */
+  font-family: 'Courier New', serif;
+  font-weight: bold;
   padding: .2rem;
 }
 
-.codeDiv {
+pre {
   background-color: lightgray;
   font-family: 'Courier New', serif;
   font-weight: bold;
