@@ -11,7 +11,7 @@ const Home = () => {
       <aside>The exploits of the fish mainly involve pooping and eating...</aside>
       <p>Anywhoo, this will all be coming along incrementally as I work on my developer skills and practice JavaScript, HTML, CSS, and dive into learning more technologies!</p>
       <p>Currently, I am working on 👩‍💻 this website, nichelicorn.dev, a hotel management app with an API, and learning how to rollerskate.</p>
-      <p>Click the links in the header to check out more on nichelicorn.dev!</p>
+      <p className="funStyle">🐰 Click the links in the header to check out more on nichelicorn.dev! 🥕</p>
     </section>
   )
 }
