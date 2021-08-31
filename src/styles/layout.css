@@ -35,7 +35,8 @@ body {
 .mainContent {
   border: 1px solid aquamarine;
   width: 70%;
-  padding: 1rem 20rem 1rem 20rem;
+  padding: 1rem;
+  /* padding: 1rem 20rem 1rem 20rem; */
   margin: 1rem;
 }
 
@@ -49,8 +50,16 @@ body {
 
 code {
   background-color: lightgray;
+  /* margin: 1rem; */
   padding: .2rem;
-  text-overflow: inherit;
+}
+
+.codeDiv {
+  background-color: lightgray;
+  font-family: 'Courier New', serif;
+  font-weight: bold;
+  margin: 1rem;
+  padding: .5rem;
 }
 
 .tldr {

@@ -2,7 +2,8 @@
 title : "JavaScript Concepts : Dot and Bracket Notation"
 ---
 
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
+import "../styles/layout.css";
 
 <Layout>
 
@@ -20,15 +21,15 @@ Beyond that tidbit, here are some other interesting things about this useful Jav
 
 Let's start with the syntax. We have two options when using property accessors.
 
-##### Dot `.` notation :
-```
+##### Dot `.` notation : 
+<div className="codeDiv">
 object.property;
-```
+</div>
 
 ##### Bracket `[]` notation :
-```
+<div className="codeDiv">
 object["property"];
-```
+</div>
 
 The `property` is the key you are attempting to access within an object. Property accessors give us the ability to obtain these values. Neat!
 
@@ -37,17 +38,16 @@ The `property` is the key you are attempting to access within an object. Propert
 🕵️‍♀️ Start by asking yourself a question : "Do I know the keynames I want to access?"
 
 ##### If the answer is `yes`, use dot notation!
-When using dot notation, one must follow the standard naming rules for JavaScript identifiers. (If you don't remember those rules, [here's a refresher](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).
+Because dot notation is so easy to use, go with dot notation! Unless you can't. And sometimes you just *can't* use the dot, because you don't know what you're looking for, or because the key has a weird name that doesn't follow the rules.
+
+Remember, when using dot notation, one must follow the standard naming rules for JavaScript identifiers. (If you don't remember those rules, [here's a refresher](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).)
 
 
 ##### If the answer is `no`, use bracket notation!
-Because dot notation is so easy to use, go with dot notation! Unless you can't. And sometimes you just can't use the dot, because you don't know what you're looking for, or because the key has a weird name that doesn't follow these rules:
-
-When using the syntax `object[property_name]`, `property_name` can be represented by a string or Symbol, and doesn't need to represent a known key name. Because JavaScript relies upon type coercion, these values will be coerced into strings.
+If you don't know the keynames, you can use brackets! You can use *variables* to identify unknown or weird keynames using the syntax `object[property_name]`, where `property_name` can be represented by a string or Symbol. Because JavaScript relies upon type coercion, these values will be coerced into strings.
 
 ### Dot Notation
 To get some practice, let's create an object. Copy this code into your console to follow along.
-
 ```
 const jediOne = {
   name: "Ahsoka Tano",
