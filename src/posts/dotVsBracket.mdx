@@ -1,15 +1,16 @@
 ---
-title : "Revisiting Concepts : Dot and Bracket Notation"
+title : "JavaScript Concepts : Dot and Bracket Notation"
 ---
 
 import Layout from "../components/Layout"
 
 <Layout>
 
-# Revisiting Concepts : Dot and Bracket Notation
-Today's review topic was dot and bracket notation. What are they for? Why would I use one or the other? Is it even important to know the differences? How do they work?
+# JavaScript Concepts : Dot and Bracket Notation
+Dot and bracket notation... What are they for? Why would I use one or the other? Is it even important to know the differences? How do they work? Did you know that dot and bracket notation can also be referred to as property accessors? 
 
-Here is what I learned about property accessors.
+Beyond that tidbit, here are some other interesting things about this useful JavaScript tool.
+
 
 ### Syntax
 
@@ -25,11 +26,11 @@ object.property;
 object["property"];
 ```
 
-The `property` is the key you are attempting to access within an object (and get its values). Property accessors give us the ability to obtain these values. Neat!
+The `property` is the key you are attempting to access within an object. Property accessors give us the ability to obtain these values. Neat!
 
 ### How to choose?
 
-Start by asking yourself a question : "Do I know the keynames I want to access?"
+🕵️‍♀️ Start by asking yourself a question : "Do I know the keynames I want to access?"
 
 ##### If the answer is `yes`, use dot notation!
 When using dot notation, one must follow the standard naming rules for JavaScript identifiers. (If you don't remember those rules, [here's a refresher](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).
@@ -55,7 +56,7 @@ When thinking about the properties a Jedi might have, it's safe to assume they w
 Let's get the name property first.
 
 ```
-console.log(jediOne.name);
+jediOne.name;
 ```
 
 This should log the Jedi's name, [Ahsoka Tano](https://starwars.fandom.com/wiki/Ahsoka_Tano)!
@@ -65,17 +66,24 @@ Try it out with the homeworld. Having trouble? Follow the example for getting th
 Let's move on to bracket notation.
 
 ### Bracket notation
-Bracket notation provides more flexibility when it comes to accessing values dynamically. 
+Bracket notation can be used much like dot notation when the key is known. This code should give you the same string you logged using the dot notation:
+```
+jediOne["name"];
+```
 
-Interestingly, when using bracket notation, the key name does not need to be known! JavaScript has the power to search an object for a matching property, and return that value if a match is found. This gives us some flexibility with how we interact with objects.
+Beyond copying the usefulness of dots, bracket notation provides more flexibility when it comes to accessing values dynamically. 
 
-Let's see if we can discover the Jedi's homeworld using this power (and of course, pretend you haven't already examined this property).
+Interestingly, when using bracket notation, the key name does not need to be known! Using a variable, JavaScript has the power to search an object for a matching property, and return that value if a match is found. This gives us some flexibility with how we interact with objects.
 
+Let's see if we can discover the Jedi's homeworld using this power (and pretend you haven't already examined this property).
 ```
 const mysteryPlanet = "homeworld";
 
-console.log(jediOne[mysteryPlanet]);
+jediOne[mysteryPlanet];
 ```
+This should give you the name of Ahsoka's homeworld, Shili! Try this 
+
+📌 Take note of the syntax when calling on a variable to do the work of the accessor -- you don't need quotations `" "`! JavaScript knows that in this example, mysteryPlanet is a variable, and it's not looking for a matching key in the JediOne object.
 
 Next, let's add a new property to our `jediOne` object.
 
@@ -112,7 +120,7 @@ jediOne["lightsabers"] = [
 ]
 ```
 
-You should now have an array of lightsabers that Ahsoka can use! And we can use their values by using some fancy notation.
+You should now have an array of lightsabers that Ahsoka can use! And we can get their values by using some fancy notation.
 
 Try accessing the pair of white lightsabers and logging this string in the console: "Ahsoka Tano has a pair of lightsabers with white blades."
 
@@ -121,19 +129,19 @@ What did you come up with?
 Was it this? 
 
 ```
-console.log(`${jediOne.name} has a pair of lightsabers with ${jediOne["lightsabers"][2].blade} blades.`)
+`${jediOne.name} has a pair of lightsabers with ${jediOne["lightsabers"][2].blade} blades.`
 ```
 
 Or maybe something else? Did you get the result you wanted! If you did, yay!!! 🎉 If you didn't, that's okay -- try again!
 
 <sub>
-Thank you for reading my post! Check out these resources if you want more info about dot / bracket notation.
+Thank you for reading my post! Check out these resources if you want more info about this topic.
 </sub>
 <sub>
   <ul>
     <li>MDN : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors">Property accessors </a></li>
+    <li>MDN : <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">JavaScript Symbols</a></li>
     <li>Samantha Ming : <a href="https://medium.com/dailyjs/dot-notation-vs-bracket-notation-eedea5fa8572">Dot notation vs Bracket notation</a></li>
-    <li></li>
   </ul>
 </sub>
 

@@ -48,7 +48,6 @@ code {
   background-color: lightgray;
   padding: .2em;
   text-overflow: inherit;
-  width: 80%;
 }
 
 [aria-current] {
