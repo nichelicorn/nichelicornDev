@@ -1,12 +1,17 @@
+// Imports
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
+// Component to render
 const Layout = ({ children }) => {
   return (
     <section>
       <Header />
-      <main>{children}</main>
+      <div className="contentWrapper">
+        <main className="mainContent">{children}</main>
+        <section className="sideContent">🐇</section>
+      </div>
       <Footer />
     </section>
   );

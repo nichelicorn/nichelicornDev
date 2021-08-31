@@ -1,0 +1,37 @@
+.hdr {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* justify-content: space-evenly; */
+  /* position:sticky; */
+  background-color:rosybrown;
+  color: white;
+  height: 7vh;
+  margin: 0;
+  padding: 1rem;
+  width: auto;
+}
+
+.nameTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: .5rem;
+  width: 35%;
+}
+
+.devName {
+  margin: 0;
+}
+
+.hdrList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  list-style: circle;
+  margin: 0;
+  padding: .5rem;
+  width: 65%;
+}

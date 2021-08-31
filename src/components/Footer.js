@@ -1,15 +1,15 @@
 import * as React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const StyledFooter = styled.footer`
-  padding: 20px;
-  background-color: cornflowerblue;
-  color: white;
-  ${'' /* .purple {
-    color: purple;
-  } */}
+// const StyledFooter = styled.footer`
+//   padding: 20px;
+//   background-color: cornflowerblue;
+//   color: white;
+//   ${'' /* .purple {
+//     color: purple;
+//   } */}
 
-`;
+// `;
 
 // const StyledHeading = styled.h3`
 //   padding: 20px;
@@ -19,11 +19,10 @@ const StyledFooter = styled.footer`
 
 const Footer = () => {
   return (
-    <StyledFooter>
-      {/* <StyledHeading>This is my heading 🧭</StyledHeading> */}
-      Hello, I am a footer 🛼
-      {/* <span className="purple">🍆 purple thing</span> */}
-    </StyledFooter>
+    <footer className="ftr">
+      <p className="ftrText">Made with ❤️, 🧐, 🍵</p>
+      <p className="ftrText">© Nichele Dunn 2021<sub className="ftrSub">  ... hey, that rhymes 🥸</sub></p>
+    </footer>
   );
 };
 
