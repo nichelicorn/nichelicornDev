@@ -7,10 +7,14 @@ import Layout from "../components/Layout"
 <Layout>
 
 # JavaScript Concepts : Dot and Bracket Notation
+
+insert byline here
+
 Dot and bracket notation... What are they for? Why would I use one or the other? Is it even important to know the differences? How do they work? Did you know that dot and bracket notation can also be referred to as property accessors? 
 
 Beyond that tidbit, here are some other interesting things about this useful JavaScript tool.
 
+<section className="tldr">TLDR: Dot and bracket notation are used to access object values, using their keys. Usually, you will want to use dot notation, but sometimes, you will <i>have</i> to use bracket notation. Use the syntax <code>object.property</code> or <code>object["property"]</code> to get the values you're looking for.</section>
 
 ### Syntax
 
@@ -81,9 +85,9 @@ const mysteryPlanet = "homeworld";
 
 jediOne[mysteryPlanet];
 ```
-This should give you the name of Ahsoka's homeworld, Shili! Try this 
+This should give you the name of Ahsoka's homeworld, Shili! 
 
-📌 Take note of the syntax when calling on a variable to do the work of the accessor -- you don't need quotations `" "`! JavaScript knows that in this example, mysteryPlanet is a variable, and it's not looking for a matching key in the JediOne object.
+📌 Take note of the syntax when calling on a variable to do the work of the accessor -- you don't need quotations `" "`! JavaScript knows that in this example, mysteryPlanet is a variable, and it's not looking for a matching key in the JediOne object. What happens if you *do* include the quotations?
 
 Next, let's add a new property to our `jediOne` object.
 
@@ -132,15 +136,16 @@ Was it this?
 `${jediOne.name} has a pair of lightsabers with ${jediOne["lightsabers"][2].blade} blades.`
 ```
 
-Or maybe something else? Did you get the result you wanted! If you did, yay!!! 🎉 If you didn't, that's okay -- try again!
+Or maybe something else? Did you get the result you wanted! If you did, yay!!! 🎉 If you didn't, that's okay -- try again! Follow the error messages. 🕵️‍♀️
 
 <sub>
-Thank you for reading my post! Check out these resources if you want more info about this topic.
+Thank you for reading my post! 💚 Check out these resources if you want more info about this topic.
 </sub>
 <sub>
   <ul>
     <li>MDN : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors">Property accessors </a></li>
     <li>MDN : <a href="https://developer.mozilla.org/en-US/docs/Glossary/Symbol">JavaScript Symbols</a></li>
+    <li>MDN : <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">JavaScript Identifier</a></li>
     <li>Samantha Ming : <a href="https://medium.com/dailyjs/dot-notation-vs-bracket-notation-eedea5fa8572">Dot notation vs Bracket notation</a></li>
   </ul>
 </sub>

@@ -35,6 +35,8 @@ body {
   border: 1px solid aquamarine;
   /* min-height: 76vh; */
   width: 70%;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .sideContent {
@@ -42,12 +44,26 @@ body {
   border: 1px solid lime;
   /* min-height: 76hv; */
   width: 30%;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 code {
   background-color: lightgray;
-  padding: .2em;
+  padding: .2rem;
   text-overflow: inherit;
+}
+
+.tldr {
+  background-color:darkcyan;
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
+  padding: .7rem;
+}
+
+.tldr > code {
+  color: black;
 }
 
 [aria-current] {
