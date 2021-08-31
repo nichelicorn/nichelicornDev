@@ -1,5 +1,7 @@
+// Imports
 import React from "react";
 
+// Component to render
 const Home = () => {
   return (
     <section>

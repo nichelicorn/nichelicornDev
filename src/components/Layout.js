@@ -1,8 +1,9 @@
+// Imports
 import React from "react";
 import Header from "./Header";
-// import Home from "./Home";
 import Footer from "./Footer";
 
+// Component to render
 const Layout = ({ children }) => {
   return (
     <section>

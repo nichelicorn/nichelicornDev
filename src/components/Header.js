@@ -1,23 +1,8 @@
-import * as React from "react";
+// Imports
+import React from "react";
 import { Link } from "gatsby";
-// import styled from "styled-components";
 
-// Header styling
-// const StyledHeader = styled.header`
-//   padding: 20px;
-//   background-color: cornflowerblue;
-//   color: white;
-// }
-// `;
-
-
-
-// const StyledHeading = styled.h3`
-//   padding: 20px;
-//   background-color: cornflowerblue;
-//   color: black;
-// `;
-
+// Component to render
 const Header = () => {
   return (
     <header className="hdr">
