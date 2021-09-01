@@ -1,18 +1,18 @@
 .ftr {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: flex-start; */
-  justify-content: space-evenly;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
   background-color: rosybrown;
   color: white;
-  height: 5vh;
+  font-family: "Beth Ellen";
   margin: 0;
   padding: 1rem;
+  text-align: center;
   width: auto;
 }
 
-.ftrText {
+.ftr > p {
   margin: 0;
   font-size: medium;
   padding: .5rem;

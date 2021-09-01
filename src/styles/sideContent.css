@@ -1,9 +1,28 @@
+.sideHeader {
+  font-size: 450%;
+}
+
 .sideContent {
   background-color:darkseagreen;
   border: 1px solid lime;
-  width: 30%;
+  /* width: 30%; */
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  /* font-size: 700%; */
+}
+
+/* 📱 mobile styles 👇 */
+@media screen and (min-width: 250px) and (max-width: 539px) {
+
+}
+
+/* 📲 tablet styles 👇  */
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+
+}
+
+
+/* 💻 desktop styles 👇 */
+@media screen and (min-width: 1024px) {
+
 }

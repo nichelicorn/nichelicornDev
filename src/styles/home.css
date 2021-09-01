@@ -1,12 +1,13 @@
 .homeContent {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  text-align: center;
 }
 
 .homeHdr {
   font-family: "Beth Ellen";
-  font-size: 1.7rem;
-  text-align: center;
+  /* font-size: 1.7rem; */
+  /* text-align: center; */
 }
 
 .mainContent {
@@ -18,7 +19,13 @@
 
 /* 📱 mobile styles 👇 */
 @media screen and (min-width: 250px) and (max-width: 539px) {
+  .homeHdr {
+    font-size: 1.5rem;
+  }
 
+  .homeContent {
+    flex-wrap: wrap;
+  }
 }
 
 /* 📲 tablet styles 👇  */
