@@ -11,6 +11,7 @@ import "../styles/sideContent.css";
 import "../styles/about.css";
 import "../styles/portfolio.css";
 import "../styles/footer.css";
+import "../styles/queries.css";
 
 // Component to render
 const IndexPage = () => {
