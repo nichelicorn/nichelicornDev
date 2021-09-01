@@ -11,10 +11,10 @@ const PortfolioPage = () => {
   // perhaps I could simply style a card layout, build a trading card for each app in the portfolio and link to the GH deployments from the card?
   return (
     <Layout>
-      <div>
+      <div className="portfolioWrapper">
         <section>
-          <h3 style={headingStyles}>🚧 Portfolio will be presented here 💼</h3>
-          <p style={paragraphStyles}>👩‍💻 visit nichelicorn on <Link to="https://github.com/nichelicorn">GitHub</Link> 🐙😸</p>
+          <h3>🚧 Portfolio will be presented here 💼</h3>
+          <p>👩‍💻 visit nichelicorn on <Link to="https://github.com/nichelicorn">GitHub</Link> 🐙😸</p>
         </section>
         <SideContent />
       </div>

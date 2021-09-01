@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <section className="layoutWrapper">
       <Header />
       <div className="contentWrapper">
-        <main>{children}</main>
+        <main className="layoutMain">{children}</main>
       </div>
       <Footer />
     </section>

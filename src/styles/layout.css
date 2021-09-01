@@ -34,27 +34,16 @@ body {
   flex-direction: row;
 }
 
-/* .mainContent {
+.layoutMain {
   border: 1px solid aquamarine;
-  width: 70%;
   padding: 1rem;
-  padding: 1rem 20rem 1rem 20rem;
   margin: 1rem;
-} */
+}
 
+/* these styles are used in the blog posts 👇 */
 .illuminated {
   font-size: 300%;
 }
-
-/* .sideContent {
-  background-color:darkseagreen;
-  border: 1px solid lime;
-  width: 30%;
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 700%;
-} */
 
 code {
   background-color: lightgray;
