@@ -6,11 +6,10 @@ import Footer from "./Footer";
 // Component to render
 const Layout = ({ children }) => {
   return (
-    <section>
+    <section className="layoutWrapper">
       <Header />
       <div className="contentWrapper">
-        <main className="mainContent">{children}</main>
-        <section className="sideContent">🐇</section>
+        <main>{children}</main>
       </div>
       <Footer />
     </section>
