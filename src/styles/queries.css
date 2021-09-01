@@ -6,7 +6,19 @@
 
   .layoutMain {
     background-color: aquamarine;
+  }
 
+  .hdrList {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .homeHdr {
+    font-size: 1.5rem;
+  }
+
+  .homeContent {
+    flex-wrap: wrap;
   }
 }
 
@@ -20,18 +32,43 @@
     background-color: azure;
   }
 
+  .hdrList {
+    display: flex;
+    justify-content: space-evenly;
+  } 
 }
 
 
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
-  /* .contentWrapper {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: row;
-  } */
-  
   .layoutMain {
     background-color: cornflowerblue;
+  }
+
+  .hdr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nameTile {
+    display: flex;
+    flex-direction: column;
+     width: 35%;
+  }
+
+  .hdrList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+  }
+
+  .ftr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }

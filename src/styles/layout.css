@@ -69,6 +69,7 @@ pre {
   color: black;
 }
 
+/* moved this styling to the header css */
 /* [aria-current] {
   font-family: "Beth Ellen";
   background-color:mistyrose;
@@ -81,12 +82,6 @@ pre {
   background-color: mediumaquamarine;
   font-size: 115%;
 }
-
-/* @media screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-} */
 
 /* small {
   font-size: 80%;
@@ -105,10 +100,6 @@ pre {
   padding: 1.5rem;
   background-color: cornflowerblue;
   color: white;
-} */
-
-/* header > p {
-
 } */
 
 /* ul {
