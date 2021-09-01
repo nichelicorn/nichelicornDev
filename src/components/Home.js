@@ -5,7 +5,7 @@ import SideContent from "./SideContent";
 // Component to render
 const Home = () => {
   return (
-    <section className="homeContent">
+    <section className="homeWrapper">
         <h1 className="homeHdr">Welcome to nichelicorn.dev‍</h1>
         <div className="allHomeContent">
           <div className="mainContent">
