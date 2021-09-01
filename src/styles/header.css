@@ -1,39 +1,24 @@
 .hdr {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   background-color:rosybrown;
   color: white;
-  height: 7vh;
   margin: 0;
   padding: 1rem;
+  text-align: center;
   width: auto;
 }
 
 .nameTile {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   font-family: "Beth Ellen";
   margin: 0;
   padding: .5rem;
-  width: 35%;
-}
-
-.devName {
-  margin: 0;
 }
 
 .hdrList {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   color: white;
   list-style: circle;
   margin: 0;
   padding: .5rem;
-  width: 65%;
 }
 
 [aria-current] {
@@ -42,4 +27,44 @@
   color: rgb(48, 24, 7);
   font-size: 1.3em;
   padding: .5rem;
+}
+
+/* 📱 mobile styles 👇 */
+@media screen and (min-width: 250px) and (max-width: 539px) {
+  .hdrList {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* 📲 tablet styles 👇  */
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .hdrList {
+    display: flex;
+    justify-content: space-evenly;
+  } 
+}
+
+
+/* 💻 desktop styles 👇 */
+@media screen and (min-width: 1024px) {
+  .hdr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nameTile {
+    display: flex;
+    flex-direction: column;
+     width: 35%;
+  }
+
+  .hdrList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+  }
 }

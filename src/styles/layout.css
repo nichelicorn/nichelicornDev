@@ -1,3 +1,4 @@
+/* 🎨 styles to apply to the whole layout */
 html, body {
   font-family: "Verdana", sans-serif;
   font-size: 1.1rem;
@@ -28,17 +29,49 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-.contentWrapper {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: row;
-}
-
 .layoutMain {
-  border: 1px solid aquamarine;
+  border: 1px solid fuchsia;
   padding: 1rem;
   margin: 1rem;
 }
+
+/* 📱 mobile styles 👇 */
+@media screen and (min-width: 250px) and (max-width: 539px) {
+  html {
+    font-size: 100%;
+  }
+
+  .layoutMain {
+    background-color: aquamarine;
+  }
+}
+
+/* 📲 tablet styles 👇  */
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  html {
+    font-size: 110%;
+  }
+
+  .layoutMain {
+    background-color: azure;
+  }
+
+}
+
+
+/* 💻 desktop styles 👇 */
+@media screen and (min-width: 1024px) {
+  /* .contentWrapper {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+  } */
+  
+  .layoutMain {
+    background-color: cornflowerblue;
+  }
+}
+
 
 /* these styles are used in the blog posts 👇 */
 .illuminated {
@@ -86,11 +119,11 @@ pre {
   font-size: 115%;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
-}
+} */
 
 /* small {
   font-size: 80%;
