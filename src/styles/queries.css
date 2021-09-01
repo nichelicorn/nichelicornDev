@@ -20,6 +20,11 @@
   .homeContent {
     flex-wrap: wrap;
   }
+
+  .allHomeContent {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /* 📲 tablet styles 👇  */
@@ -36,6 +41,22 @@
     display: flex;
     justify-content: space-evenly;
   } 
+  
+  .homeContent {
+    flex-direction: column;
+  }
+
+  .homeHdr {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .mainContent, .sideContent {
+    width: 50%;
+    margin: 0;
+  }
+
 }
 
 
@@ -63,6 +84,24 @@
     justify-content: space-evenly;
     align-items: center;
     width: 65%;
+  }
+
+  .homeContent {
+    flex-direction: column;
+  }
+
+  .homeHdr {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .mainContent {
+    width: 65%;
+  }
+
+  .sideContent {
+    width: 35%;    
   }
 
   .ftr {
