@@ -1,0 +1,25 @@
+.postStyles {
+  padding: 1rem;
+  border: 1px solid darkgray;
+  border-radius: 1.5rem;
+}
+
+.tldr {
+  background-color:darkcyan;
+  color: white;
+  font-family: "Courier New", serif;
+  font-weight: bold;
+  margin: 1rem;
+  padding: .7rem;
+  text-align: justify;
+}
+
+.tldr > code {
+  color: black;
+}
+
+.postResources {
+  background-color:honeydew;
+  font-size: 85%;
+  padding: 1rem;
+}

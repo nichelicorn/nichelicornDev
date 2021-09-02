@@ -37,7 +37,8 @@ img {
 
 .layoutMain {
   display: flex;
-  border: 1px solid fuchsia;
+  flex-direction: column;
+  /* border: 1px solid fuchsia; */
   padding: 1rem;
   margin: 1rem;
 }
@@ -65,20 +66,9 @@ pre {
   font-weight: bold;
   margin: 1rem;
   padding: .5rem;
+  white-space: pre-wrap;
 }
 
-.tldr {
-  background-color:darkcyan;
-  color: white;
-  font-weight: bold;
-  margin: 1rem;
-  padding: .7rem;
-  text-align: justify;
-}
-
-.tldr > code {
-  color: black;
-}
 
 /* moved this styling to the header css */
 /* [aria-current] {
@@ -90,8 +80,10 @@ pre {
 } */
 
 .funStyle {
-  background-color: mediumaquamarine;
+  background-color: darkseagreen;
+  border-radius: 1rem;
   font-size: 115%;
+  padding: 1rem;
 }
 
 /* small {
