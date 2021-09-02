@@ -37,7 +37,7 @@ img {
 
 .layoutMain {
   display: flex;
-  border: 1px solid fuchsia;
+  /* border: 1px solid fuchsia; */
   padding: 1rem;
   margin: 1rem;
 }
