@@ -4,8 +4,12 @@
     font-size: 100%;
   }
 
+  code {
+    
+  }
+
   .layoutMain {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
 
   .hdrList {
@@ -35,7 +39,7 @@
   }
 
   .layoutMain {
-    background-color: azure;
+    /* background-color: azure; */
   }
 
   .hdrList {
@@ -64,7 +68,7 @@
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
   .layoutMain {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
   }
 
   .hdr {
