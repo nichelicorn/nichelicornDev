@@ -2,7 +2,7 @@
 html, body {
   font-family: "Verdana", sans-serif;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 150%;
   text-align: justify;
   margin: 0;
 }
@@ -29,6 +29,12 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+img {
+  border-style: none;
+  max-width: 100%;
+  margin: .5rem;
+}
+
 .layoutMain {
   display: flex;
   border: 1px solid fuchsia;
@@ -36,11 +42,11 @@ body {
   margin: 1rem;
 }
 
-/* these styles are used in the blog posts 👇 */
 .illuminated {
   font-size: 300%;
 }
 
+/* these styles are used in the blog posts 👇 */
 code {
   background-color: lightgray;
   font-family: 'Courier New', serif;
@@ -87,11 +93,6 @@ pre {
   font-size: 80%;
 } */
 
-/* img {
-  border-style: none;
-  max-width: 100%;
-  margin: .5rem;
-} */
 
 /* header {
   display: flex;

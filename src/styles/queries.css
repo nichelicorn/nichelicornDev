@@ -17,7 +17,8 @@
     font-size: 1.5rem;
   }
 
-  .homeWrapper {
+  .homeWrapper,
+  aboutWrapper {
     flex-wrap: wrap;
   }
 
