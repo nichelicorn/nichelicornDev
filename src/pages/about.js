@@ -8,7 +8,7 @@ const AboutPage = () => {
     <Layout>
       <title>About Nichele D.</title>
       <section className="aboutWrapper">
-        <h1 className="abtHdr">About Me</h1>
+        <h1 className="hOneStyles">About Me</h1>
         <p><span className="illuminated">🙋‍♀️ </span>I'm Nichele D, a technologist from Colorado. I love learning, and jumping into the world of JavaScript and front-end engineering has created plenty of avenues for exploration!</p>
         <div className="imgBar"><img src="https://avatars.githubusercontent.com/u/63027000?v=4" alt="Headshot of Nichele D, green-haired version"></img></div>
         <p><span className="illuminated">🌊 </span>I got into tech because, like a lot of grown-ups, I just wanted more out of my work life. In 2020 I took a leap into something new, and enrolled in a bootcamp to learn front end software engineering. I learned a lot! And I learned that I have a lot to learn.</p>

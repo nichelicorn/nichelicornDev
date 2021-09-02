@@ -13,7 +13,7 @@
     justify-content: space-between;
   }
 
-  .homeHdr {
+  .hOneStyles {
     font-size: 1.5rem;
   }
 
@@ -47,15 +47,15 @@
     flex-direction: column;
   }
 
-  .homeHdr {
+  .hOneStyles {
     font-size: 1.7rem;
     margin: 0;
     padding: .5rem;
   }
 
-  .mainContent, .sideContent {
-    width: 50%;
-    margin: 0;
+  .allHomeContent {
+    flex-flow: wrap;
+    justify-content: center;
   }
 
 }
@@ -91,7 +91,7 @@
     flex-direction: column;
   }
 
-  .homeHdr {
+  .hOneStyles {
     font-size: 1.7rem;
     margin: 0;
     padding: .5rem;
@@ -103,6 +103,10 @@
 
   .sideContent {
     width: 35%;    
+  }
+
+  .portfolioWrapper {
+    flex-direction: column;
   }
 
   .ftr {

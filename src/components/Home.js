@@ -6,7 +6,7 @@ import SideContent from "./SideContent";
 const Home = () => {
   return (
     <section className="homeWrapper">
-        <h1 className="homeHdr">Welcome to nichelicorn.dev‍</h1>
+        <h1 className="hOneStyles">Welcome to nichelicorn.dev‍</h1>
         <div className="allHomeContent">
           <div className="mainContent">
             <title>nichelicornDev</title>

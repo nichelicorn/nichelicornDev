@@ -42,6 +42,11 @@ img {
   margin: 1rem;
 }
 
+.hOneStyles {
+  font-family: "Beth Ellen";
+  text-align: center;
+}
+
 .illuminated {
   font-size: 300%;
 }
