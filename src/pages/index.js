@@ -8,7 +8,6 @@ import "../styles/header.css";
 import "../styles/home.css";
 import "../styles/sideContent.css";
 import "../styles/about.css";
-import "../styles/portfolio.css";
 import "../styles/footer.css";
 import "../styles/queries.css";
 
