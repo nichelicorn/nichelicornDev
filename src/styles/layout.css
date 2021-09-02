@@ -1,7 +1,8 @@
+/* 🎨 styles to apply to the whole layout */
 html, body {
   font-family: "Verdana", sans-serif;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 150%;
   text-align: justify;
   margin: 0;
 }
@@ -28,34 +29,29 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-.contentWrapper {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: row;
+img {
+  border-style: none;
+  max-width: 100%;
+  margin: .5rem;
 }
 
-.mainContent {
-  border: 1px solid aquamarine;
-  width: 70%;
+.layoutMain {
+  display: flex;
+  border: 1px solid fuchsia;
   padding: 1rem;
-  /* padding: 1rem 20rem 1rem 20rem; */
   margin: 1rem;
+}
+
+.hOneStyles {
+  font-family: "Beth Ellen";
+  text-align: center;
 }
 
 .illuminated {
   font-size: 300%;
 }
 
-.sideContent {
-  background-color:darkseagreen;
-  border: 1px solid lime;
-  width: 30%;
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
-  font-size: 700%;
-}
-
+/* these styles are used in the blog posts 👇 */
 code {
   background-color: lightgray;
   font-family: 'Courier New', serif;
@@ -84,36 +80,24 @@ pre {
   color: black;
 }
 
-[aria-current] {
-  /* font-family: 'Pacifico', cursive; */
-  font-family: 'Courier New', serif;
-  font-weight: bold;
+/* moved this styling to the header css */
+/* [aria-current] {
+  font-family: "Beth Ellen";
   background-color:mistyrose;
   color: rgb(48, 24, 7);
   font-size: 1.5em;
   padding: .5rem;
-}
+} */
 
 .funStyle {
   background-color: mediumaquamarine;
   font-size: 115%;
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 /* small {
   font-size: 80%;
 } */
 
-/* img {
-  border-style: none;
-  max-width: 100%;
-  margin: .5rem;
-} */
 
 /* header {
   display: flex;
@@ -122,10 +106,6 @@ pre {
   padding: 1.5rem;
   background-color: cornflowerblue;
   color: white;
-} */
-
-/* header > p {
-
 } */
 
 /* ul {
@@ -197,4 +177,3 @@ button:-moz-focusring {
 } */
 
 /* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
- 

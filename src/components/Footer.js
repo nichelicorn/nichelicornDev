@@ -1,27 +1,12 @@
-import * as React from "react";
-// import styled from "styled-components";
+// Imports
+import React from "react";
 
-// const StyledFooter = styled.footer`
-//   padding: 20px;
-//   background-color: cornflowerblue;
-//   color: white;
-//   ${'' /* .purple {
-//     color: purple;
-//   } */}
-
-// `;
-
-// const StyledHeading = styled.h3`
-//   padding: 20px;
-//   background-color: cornflowerblue;
-//   color: black;
-// `;
-
+// Component to render
 const Footer = () => {
   return (
     <footer className="ftr">
-      <p className="ftrText">Made with ❤️, 🧐, 🍵</p>
-      <p className="ftrText">© Nichele Dunn 2021<sub className="ftrSub">  ... hey, that rhymes 🥸</sub></p>
+      <p>Made with ❤️, 🧐, 🍵</p>
+      <p>© Nichele Dunn 2021<sub className="ftrSub">  ... hey, that rhymes 🥸</sub></p>
     </footer>
   );
 };

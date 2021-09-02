@@ -1,0 +1,11 @@
+.portfolioWrapper {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.portfolioDisplay {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+}

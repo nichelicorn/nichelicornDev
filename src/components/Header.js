@@ -6,10 +6,7 @@ import { Link } from "gatsby";
 const Header = () => {
   return (
     <header className="hdr">
-      {/* <div className="nameTile"> */}
-        <h2 className="nameTile">Nichele D · 🦄</h2>
-        {/* <h5>technology · nature · art</h5> */}
-      {/* </div> */}
+      <h2 className="nameTile">Nichele D · 🦄</h2>
       <ul  className="hdrList">
         <li>
           <Link to="/">Home</Link>

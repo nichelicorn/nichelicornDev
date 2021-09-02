@@ -1,0 +1,5 @@
+.aboutWrapper {
+  display: flex;
+  flex-flow: wrap;
+  overflow: scroll;
+}
