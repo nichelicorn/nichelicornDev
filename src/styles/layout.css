@@ -80,8 +80,10 @@ pre {
 } */
 
 .funStyle {
-  background-color: mediumaquamarine;
+  background-color: darkseagreen;
+  border-radius: 1rem;
   font-size: 115%;
+  padding: 1rem;
 }
 
 /* small {
