@@ -10,7 +10,8 @@ const Home = () => {
         <div className="allHomeContent">
           <div className="mainContent">
             <title>nichelicornDev</title>
-            <p className="funStyle">🐰 Click the links in the header to check out more on nichelicorn.dev! 🥕</p>
+            <p className="illuminated">🚧🏗</p><p>Portfolio page under construction! Check back soon for updates</p><p className="illuminated"> 👷‍♀️⚙️</p>
+            <p className="funStyle">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p>
           </div>
           <SideContent />
         </div>
