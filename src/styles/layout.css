@@ -37,10 +37,7 @@ img {
 
 .layoutMain {
   display: flex;
-<<<<<<< HEAD
-=======
   flex-direction: column;
->>>>>>> main
   /* border: 1px solid fuchsia; */
   padding: 1rem;
   margin: 1rem;
