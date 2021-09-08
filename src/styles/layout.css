@@ -47,8 +47,7 @@ a:hover {
 }
 
 a:visited {
-  background-color: rosybrown;
-  color: rgb(254, 240, 253);
+  /* color: darkslateblue; */
 }
 
 img {

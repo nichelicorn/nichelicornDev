@@ -9,7 +9,7 @@
   }
 
   .layoutMain {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
 
   .hdrList {
@@ -39,7 +39,7 @@
   }
 
   .layoutMain {
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .hdrList {
@@ -73,7 +73,7 @@
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
   .layoutMain {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
   }
 
   .hdr {

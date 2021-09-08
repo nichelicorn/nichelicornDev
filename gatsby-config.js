@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "nichelicorn",
+    siteUrl: "www.nichelicorn.dev",
+    title: "nichelicorn 🦄",
   },
   plugins: [
     "gatsby-plugin-styled-components",
