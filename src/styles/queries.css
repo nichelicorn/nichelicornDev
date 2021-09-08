@@ -9,7 +9,7 @@
   }
 
   .layoutMain {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
   }
 
   .hdrList {
@@ -39,7 +39,7 @@
   }
 
   .layoutMain {
-    /* background-color: azure; */
+    background-color: aqua;
   }
 
   .hdrList {
@@ -62,13 +62,18 @@
     justify-content: center;
   }
 
+  .aboutWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
   .layoutMain {
-    /* background-color: cornflowerblue; */
+    background-color: cornflowerblue;
   }
 
   .hdr {
@@ -109,8 +114,17 @@
     width: 35%;    
   }
 
-  .portfolioWrapper {
-    flex-direction: column;
+  .aboutWrapper {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .imgBar {
+    width: 35%;
+  }
+
+  .aboutPs {
+    width: 60%;
   }
 
   .ftr {
