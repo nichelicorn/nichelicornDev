@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "www.nichelicorn.dev",
+    siteUrl: "https://www.nichelicorn.dev/",
     title: "nichelicorn 🦄",
     description: "A place for my code and thoughts.",
   },
