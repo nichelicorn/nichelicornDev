@@ -16,7 +16,6 @@ html {
 
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,16 +28,39 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+p {
+  padding: .5rem;
+}
+
+a {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: hsla(328, 100%, 54%, .5);
+  border-radius: 3rem;
+  /* padding: 0 .5rem 0 .5rem; */
+}
+
+a:visited {
+  /* color: darkslateblue; */
+}
+
 img {
   border-style: none;
   max-width: 100%;
   margin: .5rem;
+  padding: .5rem;
 }
 
 .layoutMain {
+  /* border: 1px solid fuchsia; */
   display: flex;
   flex-direction: column;
-  /* border: 1px solid fuchsia; */
+  min-height: 70vh;
   padding: 1rem;
   margin: 1rem;
 }
@@ -52,7 +74,6 @@ img {
   font-size: 300%;
 }
 
-/* these styles are used in the blog posts 👇 */
 code {
   background-color: lightgray;
   font-family: 'Courier New', serif;
@@ -71,13 +92,14 @@ pre {
 
 
 /* moved this styling to the header css */
-/* [aria-current] {
+[aria-current] {
   font-family: "Beth Ellen";
-  background-color:mistyrose;
-  color: rgb(48, 24, 7);
-  font-size: 1.5em;
+  color: white;
+  font-size: 1.3em;
   padding: .5rem;
-} */
+  text-decoration: none;
+  text-shadow: deeppink 10px 0 39px;
+}
 
 .funStyle {
   background-color: darkseagreen;

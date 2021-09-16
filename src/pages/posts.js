@@ -10,7 +10,7 @@ const StyledArticle = styled.article`
 `;
 
 const PostsPage = ({ data: { allMdx } }) => {
-  console.log("PostsPage allMdx <>>>", allMdx);
+  // console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
       {allMdx.edges.map(({ node }) => {

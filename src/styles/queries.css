@@ -39,7 +39,7 @@
   }
 
   .layoutMain {
-    /* background-color: azure; */
+    /* background-color: aqua; */
   }
 
   .hdrList {
@@ -60,6 +60,11 @@
   .allHomeContent {
     flex-flow: wrap;
     justify-content: center;
+  }
+
+  .aboutWrapper {
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -109,8 +114,17 @@
     width: 35%;    
   }
 
-  .portfolioWrapper {
-    flex-direction: column;
+  .aboutWrapper {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .imgBar {
+    width: 35%;
+  }
+
+  .aboutPs {
+    width: 60%;
   }
 
   .ftr {

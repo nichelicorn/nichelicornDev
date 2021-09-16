@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="ftr">
       <p>Made with ❤️, 🧐, 🍵</p>
-      <p>© Nichele Dunn 2021<sub className="ftrSub">  ... hey, that rhymes 🥸</sub></p>
+      <p>© Nichele Dunn {new Date().getFullYear()}<sub>  ... hey, that rhymes 🥸</sub></p>
     </footer>
   );
 };

@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "nichelicorn",
+    siteUrl: "https://www.nichelicorn.dev/",
+    title: "nichelicorn 🦄",
+    description: "A place for my code and thoughts.",
+    author: "Nichele Dunn",
+    image: "/images/n_in_the_mtns.jpg",
+    twitterUsername: "@nichelicorn",
   },
   plugins: [
     "gatsby-plugin-styled-components",
