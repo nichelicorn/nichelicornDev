@@ -16,19 +16,43 @@ const Home = () => {
             title
           }
           slug
+          body
         }
       }
     }
   }
 `);
 
-console.log("data.allMdx.edges.map(node => console.log(Object.values(node))) <>>>", data.allMdx.edges.map(node => console.log(Object.values(node))))
+// console.log("data.allMdx.edges.map(node => console.log(Object.values(node))) <>>>", data.allMdx.edges.map(node => console.log(Object.values(node))))
 
-console.log("find most recent blog post <>>>");
-console.log(data.allMdx.edges.sort((a, b) => {
-  console.log("a node date <>>>", a.node["frontmatter"].date);
-  console.log("b node date <>>>", b.node["frontmatter"].date);
-}))
+// want to return the most recent post by date in the array data.allMdx.edges
+// how to do this?
+
+// const mostRecent = data.allMdx.edges;
+
+const mostRecent = data.allMdx.edges.sort((a, b) => {
+  const aDate = a.node["frontmatter"].date;
+  const bDate = b.node["frontmatter"].date;
+  // const aDate = new Date(a.node["frontmatter"].date);
+  // const bDate = new Date(b.node["frontmatter"].date);
+  // console.log(aDate, bDate);
+  // console.log("a node date <>>>", a.node["frontmatter"].date);
+  // console.log("b node date <>>>", b.node["frontmatter"].date);
+  if (aDate > bDate) {
+    console.log("a node <>>>", a.node);
+    return -1;
+  } 
+  else {
+    console.log("b node <>>>", b.node)
+    return 1;
+  }
+  // return aDate - bDate;
+});
+
+console.log("find most recent blog post <>>>", mostRecent[0]);
+
+
+
 
   return (
     <section className="homeWrapper">
