@@ -9,14 +9,14 @@ import SEO from "../components/seo";
 // Styles
 import "@fontsource/beth-ellen";
 import "../styles/layout.css";
-import "../styles/header.css";
-import "../styles/home.css";
-import "../styles/sideContent.css";
-import "../styles/about.css";
-import "../styles/footer.css";
-import "../styles/pickles.css";
-import "../styles/posts.css";
-import "../styles/queries.css";
+// import "../styles/header.css";
+// import "../styles/home.css";
+// import "../styles/sideContent.css";
+// import "../styles/about.css";
+// import "../styles/footer.css";
+// import "../styles/pickles.css";
+// import "../styles/posts.css";
+// import "../styles/queries.css";
 
 // Index Page to render
 const IndexPage = () => {

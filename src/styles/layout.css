@@ -219,7 +219,8 @@ button:-moz-focusring {
 
 /* 💀 Header styles */
 .hdr {
-  background-color:rosybrown;
+  background-color: black;
+  /* background-color:rosybrown; */
   color: white;
   margin: 0;
   padding: 1rem;
@@ -244,7 +245,8 @@ button:-moz-focusring {
 
 /* 🛼 Footer styles */
 .ftr {
-  background-color: rosybrown;
+  background-color: black;
+  /* background-color: rosybrown; */
   color: white;
   font-family: "Beth Ellen";
   margin: 0;
