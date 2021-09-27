@@ -1,11 +1,12 @@
 // Imports
 import React from "react";
+import  { graphql } from "gatsby";
 import SideContent from "./SideContent";
 
 // Component to render
 const Home = () => {
 
-  
+  // const data = 
 
   return (
     <section className="homeWrapper">
@@ -21,5 +22,22 @@ const Home = () => {
     </section>
   )
 }
+
+export const query = graphql`
+query {
+  allMdx {
+    edges {
+      node {
+        frontmatter {
+          date
+          title
+        }
+        slug
+      }
+    }
+  }
+}
+
+`;
 
 export default Home;
