@@ -23,36 +23,23 @@ const Home = () => {
   }
 `);
 
-// console.log("data.allMdx.edges.map(node => console.log(Object.values(node))) <>>>", data.allMdx.edges.map(node => console.log(Object.values(node))))
-
-// want to return the most recent post by date in the array data.allMdx.edges
-// how to do this?
-
-// const mostRecent = data.allMdx.edges;
-
 const mostRecent = data.allMdx.edges.sort((a, b) => {
   const aDate = a.node["frontmatter"].date;
   const bDate = b.node["frontmatter"].date;
-  // const aDate = new Date(a.node["frontmatter"].date);
-  // const bDate = new Date(b.node["frontmatter"].date);
-  // console.log(aDate, bDate);
-  // console.log("a node date <>>>", a.node["frontmatter"].date);
-  // console.log("b node date <>>>", b.node["frontmatter"].date);
   if (aDate > bDate) {
-    console.log("a node <>>>", a.node);
+    // console.log("a node <>>>", a.node);
     return -1;
   } 
   else {
-    console.log("b node <>>>", b.node)
+    // console.log("b node <>>>", b.node)
     return 1;
   }
-  // return aDate - bDate;
 });
 
-console.log("find most recent blog post <>>>", mostRecent[0]);
+// console.log("find most recent blog post <>>>", mostRecent[0]);
+const postBody = mostRecent[0];
 
-
-
+console.log("postBody <>>>", postBody.node.body);
 
   return (
     <section className="homeWrapper">
@@ -62,7 +49,12 @@ console.log("find most recent blog post <>>>", mostRecent[0]);
             <h1 className="hOneStyles">Welcome to nichelicorn.dev‍</h1>
             <h3>👇 Most recent post 👇</h3>
 
-            {/* {REPLACE WITH BLOG POST} */}
+            <article>
+
+            {postBody.node.body}
+
+            </article>
+
 
             {/* <p className="illuminated">🚧🏗</p><p>Portfolio page under construction! Check back soon for updates</p><p className="illuminated"> 👷‍♀️⚙️</p> */}
             <p className="funStyle">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p>
