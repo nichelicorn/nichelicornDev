@@ -1,6 +1,7 @@
 // Imports
 import React from "react";
 import  { useStaticQuery, graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import SideContent from "./SideContent";
 
 // Component to render
@@ -17,11 +18,14 @@ const Home = () => {
           }
           slug
           body
+          id
         }
       }
     }
   }
 `);
+
+console.log("all data <>>>", data);
 
 const mostRecent = data.allMdx.edges.sort((a, b) => {
   const aDate = a.node["frontmatter"].date;
@@ -38,8 +42,9 @@ const mostRecent = data.allMdx.edges.sort((a, b) => {
 
 // console.log("find most recent blog post <>>>", mostRecent[0]);
 const postBody = mostRecent[0];
+console.log("postBody <>>>", postBody);
 
-console.log("postBody <>>>", postBody.node.body);
+console.log("id <>>>", postBody.node.id);
 
   return (
     <section className="homeWrapper">
@@ -47,12 +52,13 @@ console.log("postBody <>>>", postBody.node.body);
         <div className="allHomeContent">
           <div className="mainContent">
             <h1 className="hOneStyles">Welcome to nichelicorn.dev‍</h1>
-            <h3>👇 Most recent post 👇</h3>
+            <h2>👇 Most recent post 👇</h2>
 
-            <article>
-
-              {postBody.node.body}
-
+            <article key={postBody.node.id}>
+              {/* <h3>{postBody.node.frontmatter.title}</h3> */}
+              <MDXRenderer>
+                {postBody.node.body}
+              </MDXRenderer>
             </article>
 
 

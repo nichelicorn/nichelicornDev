@@ -20,4 +20,4 @@ NOTES
   * can only have one instance of `useStaticQuery` per file - use GraphiQL to define queries for multiple search parameters in a single query
   * `slug` is the file name; allows a Link to be created to open the file
   * 📍 When working with components, use the `useStaticQuery` hook
-* Use an `export const query` when working on a page
+* 📍 Use an `export const query` page query when working on a page
