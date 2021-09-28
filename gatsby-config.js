@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.nichelicorn.dev/",
-    title: "nichelicorn 🦄",
+    title: "Nichele D | 🦄 ",
     description: "A place for my code and thoughts.",
     author: "Nichele Dunn",
     image: "/images/n_in_the_mtns.jpg",

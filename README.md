@@ -1,15 +1,18 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# 🌲 Welcome to the root of nichelicorn.dev!
 
-## 🚀 Quick start
+This repo hosts the code for nichelicorn.dev, my own little place on the internet. I share articles, tidbits about things I've learned, and notes about current projects.
 
-** Say hello to GitHub!! 🐙😸
+Thanks so much for visiting!
+
+### What is happening next?
+This is my first website! I'm using this as a tool to learn React / Gatsby, how to host a website, how to be a writer... There is a lot going on here and I hope you enjoy it!
+
+Next on the project board, my resume and portfolio are in progress and will soon be available to preuse!
+
+If you have any ideas, or would like to submit a PR, please do! I'd love to hear your feedback and get a conversation going.
+
+
+<!-- ** Say hello to GitHub!! 🐙😸
 
 1.  **Create a Gatsby site.**
 
@@ -53,4 +56,4 @@
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal) -->

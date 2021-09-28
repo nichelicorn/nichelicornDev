@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
 import repos from "../data/repos.js";
+// import pickleData from "../data/pickleData.js";
 
 const PicklePage = () => {
   // console.log("repos <>>>", repos);
