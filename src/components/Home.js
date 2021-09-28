@@ -51,7 +51,7 @@ console.log("postBody <>>>", postBody.node.body);
 
             <article>
 
-            {postBody.node.body}
+              {postBody.node.body}
 
             </article>
 
@@ -64,21 +64,5 @@ console.log("postBody <>>>", postBody.node.body);
     </section>
   )
 }
-
-// export const query = graphql`
-//   query {
-//     allMdx {
-//       edges {
-//         node {
-//           frontmatter {
-//             date
-//             title
-//           }
-//           slug
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export default Home;

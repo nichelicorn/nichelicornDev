@@ -18,3 +18,6 @@ NOTES
 * `useStaticQuery` - this is a pre-defined hook that adds GraphQL queries to components;
   * takes one parameter - a string that defines the query
   * can only have one instance of `useStaticQuery` per file - use GraphiQL to define queries for multiple search parameters in a single query
+  * `slug` is the file name; allows a Link to be created to open the file
+  * 📍 When working with components, use the `useStaticQuery` hook
+* Use an `export const query` when working on a page
