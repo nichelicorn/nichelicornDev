@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 // import { MDXRenderer } from "gatsby-plugin-mdx";
 import styled from "styled-components";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 const StyledArticle = styled.article`
   padding: 20px;
@@ -11,7 +11,7 @@ const StyledArticle = styled.article`
 `;
 
 const PostsPage = ({ data: { allMdx } }) => {
-  console.log("PostsPage allMdx <>>>", allMdx);
+  // console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
       {allMdx.edges.map(({ node }) => {

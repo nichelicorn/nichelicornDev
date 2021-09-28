@@ -25,7 +25,7 @@ const Home = () => {
   }
 `);
 
-console.log("all data <>>>", data);
+// console.log("all data <>>>", data);
 
 const mostRecent = data.allMdx.edges.sort((a, b) => {
   const aDate = a.node["frontmatter"].date;
@@ -42,9 +42,9 @@ const mostRecent = data.allMdx.edges.sort((a, b) => {
 
 // console.log("find most recent blog post <>>>", mostRecent[0]);
 const postBody = mostRecent[0];
-console.log("postBody <>>>", postBody);
+// console.log("postBody <>>>", postBody);
 
-console.log("id <>>>", postBody.node.id);
+// console.log("id <>>>", postBody.node.id);
 
   return (
     <section className="homeWrapper">
