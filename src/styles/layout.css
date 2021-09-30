@@ -190,6 +190,7 @@ pre {
   padding: 1rem;
   border: 1px solid darkgray;
   border-radius: 1.5rem;
+  text-align: left;
 }
 
 .tldr {
@@ -197,7 +198,8 @@ pre {
   color: white;
   font-family: "Courier New", serif;
   font-weight: bold;
-  margin: 1rem;
+  margin: 2rem 3rem;
+  /* margin: 1rem; */
   padding: .7rem;
   text-align: justify;
 }
