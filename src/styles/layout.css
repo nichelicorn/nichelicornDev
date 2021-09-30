@@ -1,5 +1,6 @@
-/* 🎨 styles to apply to the whole layout */
-html, body {
+/* 🎨 Styles applied to the entire document */
+html, 
+body {
   font-family: "Verdana", sans-serif;
   font-size: 1.1rem;
   line-height: 150%;
@@ -56,6 +57,7 @@ img {
   padding: .5rem;
 }
 
+/* 📄 Layout styles */
 .layoutMain {
   /* border: 1px solid fuchsia; */
   display: flex;
@@ -90,8 +92,6 @@ pre {
   white-space: pre-wrap;
 }
 
-
-/* moved this styling to the header css */
 [aria-current] {
   font-family: "Beth Ellen";
   color: white;
@@ -106,115 +106,6 @@ pre {
   border-radius: 1rem;
   font-size: 115%;
   padding: 1rem;
-}
-
-/* small {
-  font-size: 80%;
-} */
-
-
-/* header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 1.5rem;
-  background-color: cornflowerblue;
-  color: white;
-} */
-
-/* ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-} */
-
-/* p {
-  line-height: 150%;
-  padding: 1rem;
-} */
-
-
-/* The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. */
-/* progress {
-  vertical-align: baseline;
-} */
-
-/* [hidden],
-template {
-  display: none;
-} */
-
-/* The <hr> HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. */
-/* hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-
-  /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
-/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
-/* [type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-} */
-/* [type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-} */
-
-/* searchbar styles -- keep these for future use! */
-/* [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-} */
-/* [type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-} */
-/* ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-} */
-/* ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-} */
-
-/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
-
-/* 🏡 Home page styles */
-.homeWrapper {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.allHomeContent {
-  display: flex;
-}
-
-.mainContent {
-  /* border: 1px solid aquamarine; */
-  width: 70%;
-  padding: 1rem;
-  margin: 1rem;
-}
-
-/* 🌮 About page styles */
-.aboutWrapper {
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
 }
 
 /* 💀 Header styles */
@@ -261,21 +152,37 @@ button:-moz-focusring {
   padding: .5rem;
 }
 
-/* 🥒 Pickle (portfolio) styles */
-.rCard {
+/* 📑 Page styles */
+/* 🏡 Home page styles */
+.homeWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: honeydew;
-  border: 1px solid gray;
-  border-radius: 2rem;
-  margin: 1rem;
-  padding: 1rem;
+  text-align: center;
 }
 
-.rName {
-  font-family: "Beth Ellen", cursive;
+.allHomeContent {
+  display: flex;
+}
+
+.mainContent {
+  /* border: 1px solid aquamarine; */
+  width: 70%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* 🥗 Sidebar styles */
+.sideHeader {
+  font-size: 450%;
+}
+
+.sideContent {
+  background-color:darkseagreen;
+  /* border: 1px solid lime; */
+  /* width: 30%; */
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 /* 📌 Post styles */
@@ -305,19 +212,30 @@ button:-moz-focusring {
   padding: 1rem;
 }
 
-/* 🥗 Sidebar styles */
-.sideHeader {
-  font-size: 450%;
-}
-
-.sideContent {
-  background-color:darkseagreen;
-  /* border: 1px solid lime; */
-  /* width: 30%; */
+/* 🥒 Pickle (portfolio) styles */
+.rCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: honeydew;
+  border: 1px solid gray;
+  border-radius: 2rem;
   margin: 1rem;
   padding: 1rem;
-  text-align: center;
 }
+
+.rName {
+  font-family: "Beth Ellen", cursive;
+}
+
+/* 🌮 About page styles */
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
 
 /* 📊 Media queries */
 /* 📱 mobile styles 👇 */
@@ -456,3 +374,52 @@ button:-moz-focusring {
     align-items: center;
   }
 }
+
+/* 💽  Styles saved for possible future use */
+/* [hidden],
+template {
+  display: none;
+} */
+
+  /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
+/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
+/* [type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+} */
+/* [type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+} */
+
+/* searchbar styles -- keep these for future use! */
+/* [type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+} */
+/* [type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+} */
+/* ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+} */
+/* ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+} */
+
+/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
+
