@@ -93,10 +93,10 @@ pre {
 }
 
 [aria-current] {
-  font-family: "Beth Ellen";
+  /* font-family: "Beth Ellen"; */
   color: white;
-  font-size: 1.3em;
-  padding: .5rem;
+  font-size: 2rem;
+  /* padding: .5rem; */
   text-decoration: none;
   text-shadow: deeppink 10px 0 39px;
 }
