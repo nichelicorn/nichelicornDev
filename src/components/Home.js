@@ -52,9 +52,9 @@ const postBody = mostRecent[0];
         <div className="allHomeContent">
           <div className="mainContent">
             <h1 className="hOneStyles">Welcome to nichelicorn.dev‍</h1>
-            <h2>👇 Most recent post 👇</h2>
+            <p>Below, a recent post. 🏕</p>
 
-            <article key={postBody.node.id}>
+            <article key={postBody.node.id} className="new-post">
               {/* <h3>{postBody.node.frontmatter.title}</h3> */}
               <MDXRenderer>
                 {postBody.node.body}
@@ -63,7 +63,7 @@ const postBody = mostRecent[0];
 
 
             {/* <p className="illuminated">🚧🏗</p><p>Portfolio page under construction! Check back soon for updates</p><p className="illuminated"> 👷‍♀️⚙️</p> */}
-            <p className="funStyle">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p>
+            {/* <p className="funStyle">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p> */}
           </div>
           <SideContent />
         </div>
