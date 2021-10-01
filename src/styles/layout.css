@@ -211,9 +211,10 @@ pre {
   color: black;
 }
 
-.postResources {
+.post-resources {
   background-color:honeydew;
   font-size: 85%;
+  margin: 1rem 4rem;
   padding: 1rem;
 }
 
@@ -226,6 +227,8 @@ pre {
   background-color: honeydew;
   border: 1px solid gray;
   border-radius: 2rem;
+}
+
 /* 🥗 Sidebar styles */
 .sideHeader {
   font-size: 450%;
