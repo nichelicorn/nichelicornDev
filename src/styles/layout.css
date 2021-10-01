@@ -1,5 +1,6 @@
-/* 🎨 styles to apply to the whole layout */
-html, body {
+/* 🎨 Styles applied to the entire document */
+html, 
+body {
   font-family: "Verdana", sans-serif;
   font-size: 1.1rem;
   line-height: 150%;
@@ -33,20 +34,22 @@ p {
 }
 
 a {
-  color: white;
+  color: inherit;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: hsla(328, 100%, 54%, .5);
-  border-radius: 3rem;
+  /* background-color: hsla(328, 100%, 54%, .5); */
+  /* border-radius: 3rem; */
   /* padding: 0 .5rem 0 .5rem; */
+  color: burlywood;
+  text-shadow: orange 7px 7px 13px;
 }
 
 a:visited {
-  /* color: darkslateblue; */
+  color: inherit;
 }
 
 img {
@@ -56,6 +59,7 @@ img {
   padding: .5rem;
 }
 
+/* 📄 Layout styles */
 .layoutMain {
   /* border: 1px solid fuchsia; */
   display: flex;
@@ -90,17 +94,6 @@ pre {
   white-space: pre-wrap;
 }
 
-
-/* moved this styling to the header css */
-[aria-current] {
-  font-family: "Beth Ellen";
-  color: white;
-  font-size: 1.3em;
-  padding: .5rem;
-  text-decoration: none;
-  text-shadow: deeppink 10px 0 39px;
-}
-
 .funStyle {
   background-color: darkseagreen;
   border-radius: 1rem;
@@ -108,90 +101,61 @@ pre {
   padding: 1rem;
 }
 
-/* small {
-  font-size: 80%;
-} */
-
-
-/* header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 1.5rem;
-  background-color: cornflowerblue;
-  color: white;
-} */
-
-/* ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-} */
-
-/* p {
-  line-height: 150%;
+/* 💀 Header styles */
+.hdr {
+  background-color: black;
+  /* background-color:rosybrown; */
+  color: ghostwhite;
+  margin: 0;
   padding: 1rem;
-} */
-
-
-/* The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. */
-/* progress {
-  vertical-align: baseline;
-} */
-
-/* [hidden],
-template {
-  display: none;
-} */
-
-/* The <hr> HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. */
-/* hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-
-  /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
-/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
-/* [type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
+  text-align: center;
+  width: auto;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-} */
-/* [type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-} */
 
-/* searchbar styles -- keep these for future use! */
-/* [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-} */
-/* [type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-} */
-/* ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-} */
-/* ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-} */
+.nameTile {
+  align-items: center;
+  font-family: "Beth Ellen";
+  margin: 0;
+  padding: .5rem;
+}
 
-/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
+.hdrList {
+  color: ghostwhite;
+  list-style: none;
+  margin: 0;
+  padding: .5rem;
+  text-decoration: none;
+}
 
+[aria-current] {
+  /* font-family: "Beth Ellen"; */
+  color: ghostwhite;
+  font-size: 2rem;
+  /* padding: .5rem; */
+  /* text-decoration: none; */
+  /* text-shadow: deeppink 10px 0 39px; */
+  text-shadow: orange 7px 7px 13px;
+}
+
+/* 🛼 Footer styles */
+.ftr {
+  background-color: black;
+  /* background-color: rosybrown; */
+  color: ghostwhite;
+  font-family: "Beth Ellen";
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  width: auto;
+}
+
+.ftr > p {
+  margin: 0;
+  font-size: medium;
+  padding: .5rem;
+}
+
+/* 📑 Page styles */
 /* 🏡 Home page styles */
 .homeWrapper {
   display: flex;
@@ -210,55 +174,48 @@ button:-moz-focusring {
   margin: 1rem;
 }
 
-/* 🌮 About page styles */
-.aboutWrapper {
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
+/* 🥗 Sidebar styles */
+.sideHeader {
+  font-size: 450%;
 }
 
-/* 💀 Header styles */
-.hdr {
-  background-color: black;
-  /* background-color:rosybrown; */
-  color: white;
-  margin: 0;
+.sideContent {
+  background-color:darkseagreen;
+  /* border: 1px solid lime; */
+  /* width: 30%; */
+  margin: 1rem;
   padding: 1rem;
   text-align: center;
-  width: auto;
 }
 
-.nameTile {
-  align-items: center;
-  font-family: "Beth Ellen";
-  margin: 0;
-  padding: .5rem;
-}
-
-.hdrList {
-  color: white;
-  list-style: none;
-  margin: 0;
-  padding: .5rem;
-  text-decoration: none;
-}
-
-/* 🛼 Footer styles */
-.ftr {
-  background-color: black;
-  /* background-color: rosybrown; */
-  color: white;
-  font-family: "Beth Ellen";
-  margin: 0;
+/* 📌 Post styles */
+.postStyles {
   padding: 1rem;
-  text-align: center;
-  width: auto;
+  border: 1px solid darkgray;
+  border-radius: 1.5rem;
+  text-align: left;
 }
 
-.ftr > p {
-  margin: 0;
-  font-size: medium;
-  padding: .5rem;
+.tldr {
+  background-color:darkcyan;
+  color: ghostwhite;
+  font-family: "Courier New", serif;
+  font-weight: bold;
+  margin: 2rem 3rem;
+  /* margin: 1rem; */
+  padding: .7rem;
+  text-align: justify;
+}
+
+.tldr > code {
+  color: black;
+}
+
+.post-resources {
+  background-color:honeydew;
+  font-size: 85%;
+  margin: 1rem 4rem;
+  padding: 1rem;
 }
 
 /* 🥒 Pickle (portfolio) styles */
@@ -270,39 +227,6 @@ button:-moz-focusring {
   background-color: honeydew;
   border: 1px solid gray;
   border-radius: 2rem;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.rName {
-  font-family: "Beth Ellen", cursive;
-}
-
-/* 📌 Post styles */
-.postStyles {
-  padding: 1rem;
-  border: 1px solid darkgray;
-  border-radius: 1.5rem;
-}
-
-.tldr {
-  background-color:darkcyan;
-  color: white;
-  font-family: "Courier New", serif;
-  font-weight: bold;
-  margin: 1rem;
-  padding: .7rem;
-  text-align: justify;
-}
-
-.tldr > code {
-  color: black;
-}
-
-.postResources {
-  background-color:honeydew;
-  font-size: 85%;
-  padding: 1rem;
 }
 
 /* 🥗 Sidebar styles */
@@ -317,8 +241,19 @@ button:-moz-focusring {
   /* width: 30%; */
   margin: 1rem;
   padding: 1rem;
-  text-align: center;
 }
+
+.rName {
+  font-family: "Beth Ellen", cursive;
+}
+
+/* 🌮 About page styles */
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
 
 /* 📊 Media queries */
 /* 📱 mobile styles 👇 */
@@ -474,3 +409,52 @@ button:-moz-focusring {
     align-items: center;
   }
 }
+
+/* 💽  Styles saved for possible future use */
+/* [hidden],
+template {
+  display: none;
+} */
+
+  /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
+/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
+/* [type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+} */
+/* [type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+} */
+
+/* searchbar styles -- keep these for future use! */
+/* [type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+} */
+/* [type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+} */
+/* ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+} */
+/* ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+} */
+
+/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
+
