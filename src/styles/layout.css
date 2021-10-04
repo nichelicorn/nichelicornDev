@@ -5,7 +5,7 @@ body {
   /* font-family: "Verdana", sans-serif; */
   font-size: 1.1rem;
   line-height: 150%;
-  text-align: justify;
+  text-align: left;
   margin: 0;
 }
 
@@ -204,13 +204,15 @@ pre {
 }
 
 .tldr {
-  background-color:#008b8b;
+  /* background-color:#008b8b; */
+  background-color: #c77101;
+  border-radius: .3rem;
   color: #f8f8ff;
   font-family: "Courier New", serif;
   font-weight: bold;
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
   /* margin: 1rem; */
-  padding: .7rem;
+  padding: 1.5rem;
   text-align: justify;
 }
 
