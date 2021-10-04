@@ -34,16 +34,19 @@ const IndexPage = () => {
   //   }
   // `)
   // Runtime data fetching
-  const [nichelicornGh, setNichelicornGH] = useState(0)
-    useEffect(() => {
-      // get data from GitHub api
-      fetch("https://api.github.com/users/nichelicorn")
-        .then(response => response.json())
-        .then(data => {
-          setNichelicornGH(data)
-          console.log("nichelicornGh <>>>", nichelicornGh)
-        })
-    }, [])
+  // this seems to run continuously... only need this to happen one time, at pageload; not sure this is the correct tool to be using for this one
+  // const [nichelicornGH, setNichelicornGH] = useState(0)
+  //   useEffect(() => {
+  //     // get data from GitHub api
+  //     fetch("https://api.github.com/users/nichelicorn")
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         setNichelicornGH(data)
+
+  //         console.log("nichelicornGH <>>>", nichelicornGH)
+  //         // console.log("data =>", data)
+  //       })
+  //   }, [nichelicornGH])
 
   return (
     <Layout>
