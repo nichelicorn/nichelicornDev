@@ -149,7 +149,9 @@ pre {
   background-color: black;
   /* background-color: rosybrown; */
   color: #f8f8ff;
-  font-family: "Beth Ellen";
+  /* font-family: "Beth Ellen"; */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   margin: 0;
   padding: 1rem;
   text-align: center;
