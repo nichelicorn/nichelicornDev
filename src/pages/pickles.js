@@ -1,5 +1,6 @@
 // Imports
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { Link, useStaticQuery, graphql } from "gatsby";
 // import repos from "../data/repos.js";
@@ -8,10 +9,20 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 const PicklePage = () => {
   // console.log("repos <>>>", repos);
 
+  const [ starsCount, setStarsCount ] = useState(0)
+  useEffect(() => {
+    // get data from GitHub api
+    fetch("https://api.github.com/repos/gatsbyjs/gatsby")
+      .then(response => response.json()) // parse JSON data from request
+      .then(resultData => {
+        setStarsCount(resultData.stargazers_count) // set data for the number of stars
+      })
+  }, [])
+
   // should be using useStaticQuery - this is a page component
-  const data = useStaticQuery(graphql`
+  // const data = useStaticQuery(graphql`
     
-  `)
+  // `)
 
   return (
   <Layout>
@@ -19,6 +30,7 @@ const PicklePage = () => {
     {/* {console.log(repos.map(repo => repo.name))} */}
     {/* {console.log(repos[0].languages)} */}
     {/* {console.log(nichelicornGH)} */}
+    {console.log("starsCount <>>>", starsCount)}
     {
       repos.map(repo => {
         return (
