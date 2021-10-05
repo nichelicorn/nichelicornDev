@@ -1,10 +1,11 @@
 /* 🎨 Styles applied to the entire document */
 html, 
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: Futura, sans-serif;
+  /* font-family: "Verdana", sans-serif; */
   font-size: 1.1rem;
   line-height: 150%;
-  text-align: justify;
+  text-align: left;
   margin: 0;
 }
 
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  /* color: hsla(0, 0%, 0%, 0.8); */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,12 +45,12 @@ a:hover {
   /* background-color: hsla(328, 100%, 54%, .5); */
   /* border-radius: 3rem; */
   /* padding: 0 .5rem 0 .5rem; */
-  color: burlywood;
-  text-shadow: orange 7px 7px 13px;
+  color: #c77101;
+  text-shadow: #cd8604 7px 7px 13px;
 }
 
 a:visited {
-  color: inherit;
+  /* color: inherit; */
 }
 
 img {
@@ -78,24 +79,30 @@ img {
   font-size: 300%;
 }
 
-code {
-  background-color: lightgray;
+/* code {
+  background-color: #d3d3d3;
   font-family: 'Courier New', serif;
   font-weight: bold;
   padding: .2rem;
-}
+} */
 
+code,
 pre {
-  background-color: lightgray;
+  background-color: #d3d3d3;
   font-family: 'Courier New', serif;
   font-weight: bold;
-  margin: 1rem;
-  padding: .5rem;
+  /* margin: 1rem; */
+  /* padding: .5rem; */
   white-space: pre-wrap;
 }
 
+pre {
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .funStyle {
-  background-color: darkseagreen;
+  background-color: #8fbc8f;
   border-radius: 1rem;
   font-size: 115%;
   padding: 1rem;
@@ -103,9 +110,9 @@ pre {
 
 /* 💀 Header styles */
 .hdr {
-  background-color: black;
+  background-color: #000000;
   /* background-color:rosybrown; */
-  color: ghostwhite;
+  color: #f8f8ff;
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -120,7 +127,7 @@ pre {
 }
 
 .hdrList {
-  color: ghostwhite;
+  color: #f8f8ff;
   list-style: none;
   margin: 0;
   padding: .5rem;
@@ -129,20 +136,22 @@ pre {
 
 [aria-current] {
   /* font-family: "Beth Ellen"; */
-  color: ghostwhite;
+  color: #f8f8ff;
   font-size: 2rem;
   /* padding: .5rem; */
   /* text-decoration: none; */
   /* text-shadow: deeppink 10px 0 39px; */
-  text-shadow: orange 7px 7px 13px;
+  text-shadow: #cd8604 7px 7px 13px;
 }
 
 /* 🛼 Footer styles */
 .ftr {
   background-color: black;
   /* background-color: rosybrown; */
-  color: ghostwhite;
-  font-family: "Beth Ellen";
+  color: #f8f8ff;
+  /* font-family: "Beth Ellen"; */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -180,7 +189,7 @@ pre {
 }
 
 .sideContent {
-  background-color:darkseagreen;
+  background-color:#8fbc8f;
   /* border: 1px solid lime; */
   /* width: 30%; */
   margin: 1rem;
@@ -191,42 +200,57 @@ pre {
 /* 📌 Post styles */
 .postStyles {
   padding: 1rem;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a9;
   border-radius: 1.5rem;
   text-align: left;
 }
 
 .tldr {
-  background-color:darkcyan;
-  color: ghostwhite;
+  /* background-color:#008b8b; */
+  background-color: #c77101;
+  border-radius: .3rem;
+  color: #f8f8ff;
   font-family: "Courier New", serif;
   font-weight: bold;
-  margin: 2rem 3rem;
+  margin: 1rem 2rem;
   /* margin: 1rem; */
-  padding: .7rem;
+  padding: 1.5rem;
   text-align: justify;
 }
 
 .tldr > code {
-  color: black;
+  color: #000000;
 }
 
 .post-resources {
-  background-color:honeydew;
+  /* background-color:#f0fff0; */
+  background-color: #602d00;
+  border-radius: .3rem;
+  color: #f8f8ff;
   font-size: 85%;
   margin: 1rem 4rem;
   padding: 1rem;
 }
 
 /* 🥒 Pickle (portfolio) styles */
-.rCard {
+.pickle-jar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: wrap;
   justify-content: center;
-  background-color: honeydew;
-  border: 1px solid gray;
-  border-radius: 2rem;
+}
+
+.pickle-card,
+.rCard {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-color: #c7710145;
+  border: 2px solid #fde531;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: 2rem;
+  width: 70%;
 }
 
 /* 🥗 Sidebar styles */
@@ -235,7 +259,7 @@ pre {
 }
 
 .sideContent {
-  background-color:black;
+  background-color:#000000;
   border-radius: .5rem;
   /* border: 1px solid lime; */
   /* width: 30%; */
@@ -267,7 +291,7 @@ pre {
   }
 
   .layoutMain {
-    /* background-color: aquamarine; */
+    /* background-color: #7fffd4; */
   }
 
   .hdrList {
@@ -297,7 +321,7 @@ pre {
   }
 
   .layoutMain {
-    /* background-color: aqua; */
+    /* background-color: #00ffff; */
   }
 
   .hdrList {
@@ -320,6 +344,10 @@ pre {
     justify-content: center;
   }
 
+  .mainContent {
+    width: auto;
+  }
+
   .aboutWrapper {
     justify-content: center;
     align-items: center;
@@ -331,7 +359,7 @@ pre {
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
   .layoutMain {
-    /* background-color: cornflowerblue; */
+    /* background-color: #6495ed; */
   }
 
   .hdr {

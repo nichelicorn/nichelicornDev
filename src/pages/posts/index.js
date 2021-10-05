@@ -13,20 +13,23 @@ const PostsPage = ({ data: { allMdx } }) => {
   // console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
-      {allMdx.edges.map(({ node }) => {
-        return (
-          <StyledArticle key={node.id}>
-          <h2>
-            <Link to={`/posts/${node.slug}`}>
-              {node.frontmatter.title}
-            </Link>
-          </h2>
-            {/* <h2>{node.frontmatter.title}</h2> */}
-            <p>{node.excerpt}</p>
-            {/* <Link to={`/${node.slug}`}>View Post</Link> */}
-          </StyledArticle>
-        );
-      })}
+      <h2 className="hOneStyles">Posts</h2>
+      <section className="pickle-jar">
+        {allMdx.edges.map(({ node }) => {
+          return (
+            <article key={node.id} className="pickle-card">
+            <h3>
+              <Link to={`/posts/${node.slug}`}>
+                {node.frontmatter.title}
+              </Link>
+            </h3>
+              {/* <h2>{node.frontmatter.title}</h2> */}
+              <p>{node.excerpt}</p>
+              {/* <Link to={`/${node.slug}`}>View Post</Link> */}
+            </article>
+          );
+        })}
+      </section>
     </Layout>
   );
 };

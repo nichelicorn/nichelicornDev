@@ -19,15 +19,9 @@ Beyond that tidbit, here are some other interesting things about this useful Jav
 
 Let's start with the syntax. We have two options when using property accessors.
 
-##### Dot `.` notation : 
-```
-object.property;
-```
+**Dot `.` notation : ```object.property;```**
 
-##### Bracket `[]` notation :
-```
-object["property"];
-```
+**Bracket `[]` notation : ```object["property"];```**
 
 The `property` is the key you are attempting to access within an object. Property accessors give us the ability to obtain these values. Neat!
 
@@ -35,12 +29,14 @@ The `property` is the key you are attempting to access within an object. Propert
 
 🕵️‍♀️ Start by asking yourself a question : "Do I know the key names I want to access?"
 
-##### If the answer is `yes`, use dot notation!
+**If the answer is `yes`, use dot notation!**
+
 Because dot notation is so easy to use, go with dot notation! Unless you can't. And sometimes you just *can't* use the dot, because you don't know what you're looking for, or because the key has a weird name that doesn't follow the rules.
 
 Remember, when using dot notation, one must follow the standard naming rules for JavaScript identifiers. (If you don't remember those rules, [here's a refresher](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors).)
 
-##### If the answer is `no`, use bracket notation!
+**If the answer is `no`, use bracket notation!**
+
 If you don't know the key names, use brackets! You can use *variables* to identify unknown or weird key names using the syntax `object[property_name]`, where `property_name` can be represented by a string or Symbol. Because JavaScript relies upon type coercion, these values will be coerced into strings.
 
 ### Dot Notation
