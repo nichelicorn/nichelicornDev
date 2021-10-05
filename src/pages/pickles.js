@@ -20,15 +20,15 @@ const PicklePage = () => {
   //     })
   // }, [])
 
-    const [ starsCount, setStarsCount ] = useState(0)
-  useEffect(() => {
-    // get data from GitHub api
-    fetch("https://api.github.com/repos/gatsbyjs/gatsby")
-      .then(response => response.json()) // parse JSON data from request
-      .then(resultData => {
-        setStarsCount(resultData.stargazers_count) // set data for the number of stars
-      })
-  }, [])
+  //   const [ starsCount, setStarsCount ] = useState(0)
+  // useEffect(() => {
+  //   // get data from GitHub api
+  //   fetch("https://api.github.com/repos/gatsbyjs/gatsby")
+  //     .then(response => response.json()) // parse JSON data from request
+  //     .then(resultData => {
+  //       setStarsCount(resultData.stargazers_count) // set data for the number of stars
+  //     })
+  // }, [])
 
   const [ nichelicornRepos, setNichelicornRepos ] = useState(0)
   useEffect(() => {
@@ -50,7 +50,7 @@ const PicklePage = () => {
     {/* {console.log("repos??", repos)} */}
     {/* {console.log(repos.map(repo => repo.name))} */}
     
-    {console.log("starsCount <>>>", starsCount)}
+    {/* {console.log("starsCount <>>>", starsCount)} */}
 
     {console.log("nichelicornRepos <>>>", nichelicornRepos)}
 
