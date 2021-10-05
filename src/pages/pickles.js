@@ -1,25 +1,32 @@
 // Imports
 import React from "react";
 import Layout from "../components/Layout";
-import { Link } from "gatsby";
-import repos from "../data/repos.js";
+import { Link, useStaticQuery, graphql } from "gatsby";
+// import repos from "../data/repos.js";
 // import pickleData from "../data/pickleData.js";
 
 const PicklePage = () => {
   // console.log("repos <>>>", repos);
+
+  // should be using useStaticQuery - this is a page component
+  const data = useStaticQuery(graphql`
+    
+  `)
+
   return (
   <Layout>
-    {console.log("repos??", repos)}
+    {/* {console.log("repos??", repos)} */}
     {/* {console.log(repos.map(repo => repo.name))} */}
-    {console.log(repos[0].languages)}
+    {/* {console.log(repos[0].languages)} */}
+    {/* {console.log(nichelicornGH)} */}
     {
       repos.map(repo => {
         return (
           <article className="rCard">
             <h2 className="rName">{repo.name}</h2>
             <p>{repo.description}</p>
-            <Link to="{repo.repoUrl}">See the code on GitHub</Link>
-            <Link to={repo.deployUrl}>Visit the project live!</Link>
+            {/* <Link to="{repo.repoUrl}">See the code on GitHub</Link> */}
+            {/* <Link to={repo.deployUrl}>Visit the project live!</Link> */}
             <p>Languages used : {repo.languages}</p>
           </article>
         )
@@ -31,3 +38,5 @@ const PicklePage = () => {
 };
 
 export default PicklePage;
+
+
