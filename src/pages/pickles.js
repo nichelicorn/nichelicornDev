@@ -30,15 +30,17 @@ const PicklePage = () => {
   //     })
   // }, [])
 
-  const [ nichelicornRepos, setNichelicornRepos ] = useState(0)
+  const [ nichelicornRepoObj, setNichelicornRepoObj ] = useState(0)
   useEffect(() => {
     // get data from GitHub api
     fetch("https://api.github.com/users/nichelicorn/repos")
       .then(response => response.json()) // parse JSON data from request
       .then(resultData => {
-        setNichelicornRepos(resultData) // sets repo data
+        setNichelicornRepoObj(resultData) // sets repo data
       })
-  }, [])
+  }, []);
+
+  const onlyRepos = Object.values(nichelicornRepoObj);
 
   // should be using useStaticQuery - this is a page component
   // const data = useStaticQuery(graphql`
@@ -52,21 +54,35 @@ const PicklePage = () => {
     
     {/* {console.log("starsCount <>>>", starsCount)} */}
 
-    {console.log("nichelicornRepos <>>>", nichelicornRepos)}
+    {/* {console.log("nichelicornRepoObj <>>>", nichelicornRepoObj)} */}
+    {console.log("onlyRepos <>>>", onlyRepos)}
 
-    {
+    {/* {
       repos.map(repo => {
         return (
           <article className="rCard">
             <h2 className="rName">{repo.name}</h2>
             <p>{repo.description}</p>
-            {/* <Link to="{repo.repoUrl}">See the code on GitHub</Link> */}
-            {/* <Link to={repo.deployUrl}>Visit the project live!</Link> */}
+            <Link to="{repo.repoUrl}">See the code on GitHub</Link>
+            <Link to={repo.deployUrl}>Visit the project live!</Link>
             <p>Languages used : {repo.languages}</p>
           </article>
         )
       })
-    }
+    } */};
+
+    {
+      onlyRepos.map(repo => {
+        return (
+          <article>
+            <h2>{repo.name}</h2>
+            <h3>{repo.description}</h3>
+            <Link to="{repo.url}">{repo.name} on GitHub</Link>
+          </article>
+        )
+      })
+    };
+
 
   </Layout>
   );
