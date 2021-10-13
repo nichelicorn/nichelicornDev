@@ -13,7 +13,7 @@ const PostsPage = ({ data: { allMdx } }) => {
   // console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
-      <h2 className="hOneStyles">Posts</h2>
+      <h2 className="h-one-styles">Posts</h2>
       <section className="pickle-jar">
         {allMdx.edges.map(({ node }) => {
           return (

@@ -7,12 +7,12 @@ const AboutPage = () => {
   return (
     <Layout>
       <title>About Nichele D.</title>
-        <h1 className="hOneStyles">About Me</h1>
-        <section className="aboutWrapper">
-        <div className="imgBar">
+        <h1 className="h-one-styles">About Me</h1>
+        <section className="about-wrapper">
+        <div className="img-bar">
           <img src="https://avatars.githubusercontent.com/u/63027000?v=4" alt="Headshot of Nichele D, green-haired version"></img>
         </div>
-        <div className="aboutPs">
+        <div className="about-ps">
           <p><span className="illuminated">🙋‍♀️ </span>Hi there! I'm Nichele D, a technologist from Colorado. I love learning, and lucky for me, JavaScript and front-end engineering lead to plenty of avenues for exploration!</p>
           <p><span className="illuminated">📚 </span>When I was in college, I would joke with my mom that I wanted to be a student forever. 🤓  It wasn't really a joke, but I also believed the stories that I was supposed to become an adult, so I got a job instead of going to grad school. 🤷‍♀️ (More on that below.)  Fortunately, I'm a software developer now! As a technologist, I bring my knowledge and experience as an artist, accountant, massage therapist, aesthetician, skeptic, science enthusiast, and everything that fits into the soft recesses of my life. If you're looking for a <code>web developer</code> / <code>front end engineer</code> / <code>insert job title here</code>, and I sound like a good fit, reach out! I'd love to chat about your projects!</p>
           {/* The challenge and reward of growth and development is appealing, and has led me down many different paths already. I am an artist, massage therapist, accountant, aesthetician, and general science enthusiast. I bring all of that curiosity and experience into my work as a technologist, and the search for my first career as a <code>web developer</code> / <code>front end engineer</code> / <code>insert job title here</code>. */}

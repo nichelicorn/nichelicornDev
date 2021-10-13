@@ -71,14 +71,14 @@ const PicklePage = () => {
       })
     } */}
 
-    <h2 className="hOneStyles">Portfolio</h2>
+    <h2 className="h-one-styles">Portfolio</h2>
     <section className="pickle-jar">
       {
         onlyRepos.map(repo => {
           if (repo.language) {
             return (
               <article className="pickle-card">
-                <h3 className="hOneStyles">{repo.name}</h3>
+                <h3 className="h-one-styles">{repo.name}</h3>
                 <h4>{repo.description}</h4>
                 <Link to={repo.html_url}>{repo.name} on GitHub</Link>
                 <p>Most recent update : {repo.updated_at}</p>
