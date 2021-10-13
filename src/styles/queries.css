@@ -76,7 +76,7 @@
 /* 💻 desktop styles 👇 */
 @media screen and (min-width: 1024px) {
   .layout-main {
-    background-color: #6495ed;
+    /* background-color: #6495ed; */
   }
 
   .hdr {
