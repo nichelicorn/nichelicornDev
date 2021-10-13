@@ -11,9 +11,11 @@ const Post = ({ data }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       {/* <p>Content will *eventually* be displayed here.</p> */}
       {/* <p>{data.mdx.frontmatter.date}</p> */}
-      <MDXRenderer>
-          {data.mdx.body}
-      </MDXRenderer>
+      <article className="post-wrapper">
+        <MDXRenderer>
+            {data.mdx.body}
+        </MDXRenderer>
+      </article>  
     </Layout>
   )
 };
