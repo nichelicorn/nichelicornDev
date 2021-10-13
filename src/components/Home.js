@@ -59,7 +59,7 @@ const postBody = mostRecent[0];
                 {postBody.node.body}
               </MDXRenderer>
             </article>
-            <p className="fun-style">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p>
+            {/* <p className="fun-style">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p> */}
           </div>
           <SideContent />
         </div>
