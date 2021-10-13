@@ -17,7 +17,8 @@ import "../styles/layout.css";
 // import "../styles/footer.css";
 // import "../styles/pickles.css";
 // import "../styles/posts.css";
-// import "../styles/queries.css";
+import "../styles/styles.css"
+import "../styles/queries.css";
 
 // Index Page to render
 const IndexPage = () => {
