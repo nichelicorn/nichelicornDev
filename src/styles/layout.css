@@ -197,6 +197,10 @@ pre {
   text-align: center;
 }
 
+.twitter-timeline {
+  color: #f8f8ff;
+}
+
 /* 📌 Post styles */
 .postStyles {
   padding: 1rem;
