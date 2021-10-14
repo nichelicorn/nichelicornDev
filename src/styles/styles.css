@@ -1,4 +1,4 @@
-/* 🎨 Styles applied to the entire document */
+/* 🎨 Document styles */
 html, 
 body {
   /* font-family: Futura, sans-serif; */
@@ -12,21 +12,27 @@ body {
 html {
   box-sizing: border-box;
   overflow-y: scroll;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  /* `text-size-adjust` is experimental and not supported; altering this property overrides default browser text adjustment  */
+  /* -ms-text-size-adjust: 100%; */
+  /* -webkit-text-size-adjust: 100%; */
 }
 
 body {
-  margin: 0;
-  font-feature-settings: "kern", "liga", "clig", "calt";
-  font-kerning: normal;
+  /* `font-feature-settings` controls advanced typographic features in OpenType fonts; seems unnecessary; docs recommend using `font-variant` */
+  /* font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* `font-kerning` determins the spacing between characters in lines of text; setting to `auto`allows the browser to determine if kerning is necessary; other setting may cause small text to become unreadable */
+  font-kerning: auto;
   font-weight: normal;
-  word-wrap: break-word;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -moz-osx-font-smoothing: grayscale;
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-smoothing: antialiased; 
+  hyphens: auto;
+  margin: 0;
+  /* this `word-wrap` property will determine how a word-break will appear on the screen; going to switch this to a `hyphens` property to include the punctuation */
+  /* word-wrap: break-word; */
+  /* -moz-font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* `font-smoothing` on MDN is listed as a naughty feature - "This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future." */
+  /* -moz-osx-font-smoothing: grayscale; */
+  /* -ms-font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* -webkit-font-smoothing: antialiased;  */
 }
 
 p {

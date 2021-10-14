@@ -9,7 +9,7 @@ import SEO from "../components/seo";
 
 // Styles
 import "@fontsource/beth-ellen";
-import "../styles/layout.css";
+// import "../styles/layout.css";
 // import "../styles/header.css";
 // import "../styles/home.css";
 // import "../styles/sideContent.css";
