@@ -1,3 +1,17 @@
+/* 🎨 CSS custom properties */
+:root {
+  --dark-color: #000000;
+  --med-color: #333333;
+  --light-color: #f8f8ff;
+  --dark-accent: #c15b02;
+  --med-accent: #e4812a;
+  --light-accent: #c7710145;
+  --code-color: #d3d3d3;
+  --hover-shadow: #cd8604 7px 7px 13px;
+  --shadow-border: 10px solid #fde53155;
+}
+
+
 /* 🎨 Element styles */
 html, 
 body {
@@ -41,8 +55,10 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: #c77101;
-  text-shadow: #cd8604 7px 7px 13px;
+  /* color: #c77101; */
+  color: var(--med-accent);
+  text-shadow: var(--hover-shadow);
+  /* text-shadow: #cd8604 7px 7px 13px; */
 }
 
 p {
@@ -51,7 +67,8 @@ p {
 
 code,
 pre {
-  background-color: #d3d3d3;
+  background-color: var(--code-color);
+  /* background-color: #d3d3d3; */
   font-family: 'Courier New', serif;
   font-weight: bold;
   white-space: pre-wrap;
@@ -92,14 +109,14 @@ pre {
 .fun-style {
   background-color: #00412879;
   border-radius: 1rem;
-  color: #f8f8ff;
+  color: var(--light-color));
   font-family: "Beth Ellen";
   padding: 1rem;
 }
 
 /* 💀 Header styles */
 .hdr {
-  background-color: #000000;
+  background-color: var(--dark-color);
   color: #f8f8ff;
   margin: 0;
   padding: 1rem;
@@ -115,7 +132,7 @@ pre {
 }
 
 .hdr-list {
-  color: #f8f8ff;
+  color: var(--light-color);
   list-style: none;
   margin: 0;
   padding: .5rem;
@@ -123,16 +140,17 @@ pre {
 }
 
 [aria-current] {
-  color: #f8f8ff;
+  color: var(--light-color);
   font-size: 2rem;
   /* text-shadow: deeppink 10px 0 39px; */
-  text-shadow: #cd8604 7px 7px 13px;
+  /* text-shadow: #cd8604 7px 7px 13px; */
+  text-shadow: var(--hover-shadow);
 }
 
 /* 🛼 Footer styles */
 .ftr {
-  background-color: black;
-  color: #f8f8ff;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   margin: 0;
@@ -164,20 +182,20 @@ pre {
 }
 
 .new-post {
-  border: 10px solid black;
+  border: 10px solid var(--dark-color);
   border-radius: 17px;
 }
 
 /* 🥗 SideContent styles */
 .side-content {
-  background-color:#000000;
+  background-color: var(--dark-color);
   border-radius: .5rem;
   padding: 1rem;
   width: 30%;
 }
 
 .twitter-timeline {
-  color: #f8f8ff;
+  color: var(--light-color);
 }
 
 /* 📌 Post styles */
@@ -199,9 +217,9 @@ pre {
 
 .tldr {
   /* background-color:#008b8b; */
-  background-color: #c15b02;
+  background-color: var(--dark-accent);
   border-radius: .3rem;
-  color: #f8f8ff;
+  color: var(--light-color);
   font-family: "Courier New", serif;
   font-weight: bold;
   margin: 0 3rem;
@@ -210,23 +228,22 @@ pre {
 }
 
 .tldr > code {
-  color: #000000;
+  color: var(--dark-color);
 }
 
 .post-resources {
   /* background-color:#f0fff0; */
-  background-color: #e4812a;
+  background-color: var(--med-accent);
   border-radius: .5rem;
-  /* color: #f8f8ff; */
   margin: 0 3rem 2rem 3rem;
   padding: 1rem;
 }
 
 /* 🥒 Pickle (portfolio) styles */
 .pickle-card {
-  background-color: #c7710145;
-  border: 2px solid #fde531;
-  border-radius: .5rem;
+  background-color: var(--light-accent);
+  border: var(--shadow-border);
+  /* border-radius: .5rem; */
   margin: 1rem;
   padding: 2rem;
   width: 70%;
