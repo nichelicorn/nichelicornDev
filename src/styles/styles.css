@@ -279,14 +279,13 @@ pre {
   overflow: scroll;
 }
 
-
 /* 💽  Styles saved for possible future use */
 /* [hidden],
 template {
   display: none;
 } */
 
-  /* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
+/* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
 /* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
 /* [type="reset"],
 [type="submit"],
@@ -327,4 +326,3 @@ button:-moz-focusring {
 } */
 
 /* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
-
