@@ -23,6 +23,7 @@ NOTES
 * 📍 Use an `export const query` page query when working on a page
 
 ## CSS
+✨ CSS is awesome!
 
 ### CSS Extensions
 * Browsers have specialized CSS extensions; these set styles specifically for the defined browser and do not work cross-browser
