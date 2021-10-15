@@ -47,7 +47,7 @@ return (
       <div className="all-home-content">
         <div className="main-content">
           <h1 className="h-one-styles">Welcome to nichelicorn.dev‍</h1>
-          <p>Below, a recent post. 🏕</p>
+          <p>Below, you will find a recent post. 🏕</p>
           <article key={postBody.node.id} className="new-post">
             <section  className="post-wrapper">
               <MDXRenderer>
