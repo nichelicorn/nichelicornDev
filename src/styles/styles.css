@@ -15,31 +15,14 @@ body {
 
 html {
   box-sizing: border-box;
-  /* `text-size-adjust` is experimental and not supported; altering this property overrides default browser text adjustment  */
-  /* -ms-text-size-adjust: 100%; */
-  /* -webkit-text-size-adjust: 100%; */
 }
 
 body {
-  /* `font-feature-settings` controls advanced typographic features in OpenType fonts; seems unnecessary; docs recommend using `font-variant` */
-  /* font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* -moz-font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* -ms-font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* `font-kerning` determins the spacing between characters in lines of text; setting to `auto`allows the browser to determine if kerning is necessary; other setting may cause small text to become unreadable */
   margin: 0;
-  /* this `word-wrap` property will determine how a word-break will appear on the screen; going to switch this to a `hyphens` property to include the punctuation */
-  /* word-wrap: break-word; */
-  /* `font-smoothing` on MDN is listed as a naughty feature - "This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future." */
-  /* different than `font-smoothing` and only works on mac/OS - Render text with grayscale antialiasing, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter. */
   -moz-osx-font-smoothing: grayscale;
-  /* a different feature than the `font-smoothing` and only works on mac/OS - Smooth the font on the level of the pixel, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter. */
   -webkit-font-smoothing: antialiased; 
 }
 
-/* a:visited {
-  color: inherit;
-} */
 img {
   border-style: none;
   max-width: 100%;
@@ -58,9 +41,6 @@ a {
 a:active,
 a:focus,
 a:hover {
-  /* background-color: hsla(328, 100%, 54%, .5); */
-  /* border-radius: 3rem; */
-  /* padding: 0 .5rem 0 .5rem; */
   color: #c77101;
   text-shadow: #cd8604 7px 7px 13px;
 }
@@ -74,8 +54,6 @@ pre {
   background-color: #d3d3d3;
   font-family: 'Courier New', serif;
   font-weight: bold;
-  /* margin: 1rem; */
-  /* padding: .5rem; */
   white-space: pre-wrap;
 }
 
@@ -169,8 +147,6 @@ pre {
   padding: .5rem;
 }
 
-/* 📑 Page and Component styles */
-
 /* 🏡 Home page styles */
 .home-wrapper {
   display: flex;
@@ -183,7 +159,6 @@ pre {
 }
 
 .main-content {
-  /* border: 10px solid aquamarine; */
   width: 70%;
   padding: 1rem;
 }
@@ -197,22 +172,13 @@ pre {
 .side-content {
   background-color:#000000;
   border-radius: .5rem;
-  /* border: 1px solid lime; */
   padding: 1rem;
   width: 30%;
 }
 
-/* .side-header {
-  font-size: 450%;
-} */
-
 .twitter-timeline {
   color: #f8f8ff;
 }
-
-/* .rName {
-  font-family: "Beth Ellen", cursive;
-} */
 
 /* 📌 Post styles */
 .post-wrapper {
@@ -239,7 +205,6 @@ pre {
   font-family: "Courier New", serif;
   font-weight: bold;
   margin: 0 3rem;
-  /* margin: 1rem; */
   padding: 1.5rem;
   text-align: justify;
 }
@@ -253,17 +218,12 @@ pre {
   background-color: #e4812a;
   border-radius: .5rem;
   /* color: #f8f8ff; */
-  /* font-size: 85%; */
   margin: 0 3rem 2rem 3rem;
   padding: 1rem;
 }
 
 /* 🥒 Pickle (portfolio) styles */
 .pickle-card {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
   background-color: #c7710145;
   border: 2px solid #fde531;
   border-radius: .5rem;
@@ -278,51 +238,3 @@ pre {
   flex-direction: column;
   overflow: scroll;
 }
-
-/* 💽  Styles saved for possible future use */
-/* [hidden],
-template {
-  display: none;
-} */
-
-/* <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values. */
-/* <input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server. */
-/* [type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-} */
-/* [type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-} */
-
-/* searchbar styles -- keep these for future use! */
-/* [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-} */
-/* [type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-} */
-/* ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-} */
-/* ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-} */
-
-/* React docs recommend using a separate stylesheet : "Some examples in the documentation use style for convenience, but using the style attribute as the primary means of styling elements is generally not recommended. In most cases, className should be used to reference classes defined in an external CSS stylesheet. style is most often used in React applications to add dynamically-computed styles at render time. See also FAQ: Styling and CSS." : https://reactjs.org/docs/dom-elements.html#style */
