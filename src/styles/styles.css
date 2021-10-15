@@ -1,4 +1,4 @@
-/* 🎨 Document styles */
+/* 🎨 Element styles */
 html, 
 body {
   /* font-family: Futura, sans-serif; */
@@ -20,6 +20,9 @@ html {
 body {
   /* `font-feature-settings` controls advanced typographic features in OpenType fonts; seems unnecessary; docs recommend using `font-variant` */
   /* font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* -moz-font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* -ms-font-feature-settings: "kern", "liga", "clig", "calt"; */
+  /* -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; */
   /* `font-kerning` determins the spacing between characters in lines of text; setting to `auto`allows the browser to determine if kerning is necessary; other setting may cause small text to become unreadable */
   font-kerning: auto;
   font-weight: normal;
@@ -27,16 +30,11 @@ body {
   margin: 0;
   /* this `word-wrap` property will determine how a word-break will appear on the screen; going to switch this to a `hyphens` property to include the punctuation */
   /* word-wrap: break-word; */
-  /* -moz-font-feature-settings: "kern", "liga", "clig", "calt"; */
   /* `font-smoothing` on MDN is listed as a naughty feature - "This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future." */
-  /* -moz-osx-font-smoothing: grayscale; */
-  /* -ms-font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; */
-  /* -webkit-font-smoothing: antialiased;  */
-}
-
-p {
-  padding: .5rem;
+  /* different than `font-smoothing` and only works on mac/OS - Render text with grayscale antialiasing, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter. */
+  -moz-osx-font-smoothing: grayscale;
+  /* a different feature than the `font-smoothing` and only works on mac/OS - Smooth the font on the level of the pixel, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter. */
+  -webkit-font-smoothing: antialiased; 
 }
 
 a {
@@ -46,6 +44,8 @@ a {
   text-decoration: none;
 }
 
+a:active,
+a:focus,
 a:hover {
   /* background-color: hsla(328, 100%, 54%, .5); */
   /* border-radius: 3rem; */
@@ -54,8 +54,28 @@ a:hover {
   text-shadow: #cd8604 7px 7px 13px;
 }
 
-a:visited {
-  /* color: inherit; */
+/* a:visited {
+  color: inherit;
+} */
+
+p {
+  padding: .5rem;
+}
+
+
+code,
+pre {
+  background-color: #d3d3d3;
+  font-family: 'Courier New', serif;
+  font-weight: bold;
+  /* margin: 1rem; */
+  /* padding: .5rem; */
+  white-space: pre-wrap;
+}
+
+pre {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 img {
@@ -75,6 +95,10 @@ img {
   margin: 1rem;
 }
 
+
+
+
+
 /* 🖋 Typograpical styles */
 .h-one-styles {
   font-family: "Beth Ellen";
@@ -92,20 +116,20 @@ img {
   padding: .2rem;
 } */
 
-code,
+/* code,
 pre {
   background-color: #d3d3d3;
   font-family: 'Courier New', serif;
   font-weight: bold;
-  /* margin: 1rem; */
-  /* padding: .5rem; */
+  margin: 1rem;
+  padding: .5rem;
   white-space: pre-wrap;
 }
 
 pre {
   margin: 1rem;
   padding: 1rem;
-}
+} */
 
 .fun-style {
   background-color: #00412879;
