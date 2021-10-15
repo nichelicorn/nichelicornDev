@@ -7,10 +7,10 @@ const PostsPage = ({ data: { allMdx } }) => {
   return (
     <Layout>
       <h2 className="h-one-styles">Posts</h2>
-      <section className="pickle-jar">
+      <section className="card-container">
         {allMdx.edges.map(({ node }) => {
           return (
-            <article key={node.id} className="pickle-card">
+            <article key={node.id} className="post-card pickle-card">
             <h3>
               <Link to={`/posts/${node.slug}`}>
                 {node.frontmatter.title}

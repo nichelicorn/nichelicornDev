@@ -211,23 +211,28 @@ pre {
 /* 📌 Post styles */
 .post-wrapper {
   padding: 1rem 7rem;
+  text-align: left;
+}
+
+.post-card {
+  /* will contain styles for post cards */
 }
 
 .post-styles {
   border: 1px solid #a9a9a9;
   border-radius: 1.5rem;
-  padding: 1rem;
+  padding: 0 10rem;
   text-align: left;
 }
 
 .tldr {
   /* background-color:#008b8b; */
-  background-color: #c77101;
+  background-color: #c15b02;
   border-radius: .3rem;
   color: #f8f8ff;
   font-family: "Courier New", serif;
   font-weight: bold;
-  margin: 1rem 2rem;
+  margin: 0 3rem;
   /* margin: 1rem; */
   padding: 1.5rem;
   text-align: justify;
@@ -239,15 +244,16 @@ pre {
 
 .post-resources {
   /* background-color:#f0fff0; */
-  background-color: #602d00;
-  border-radius: .3rem;
-  color: #f8f8ff;
-  font-size: 85%;
-  margin: 1rem 4rem;
+  background-color: #e4812a;
+  border-radius: .5rem;
+  /* color: #f8f8ff; */
+  /* font-size: 85%; */
+  margin: 0 3rem 2rem 3rem;
   padding: 1rem;
 }
 
 /* 🥒 Pickle (portfolio) styles */
+.card-container,
 .pickle-jar {
   display: flex;
   flex-flow: wrap;

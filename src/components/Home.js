@@ -55,9 +55,11 @@ const postBody = mostRecent[0];
             <p>Below, a recent post. 🏕</p>
             <article key={postBody.node.id} className="new-post">
               {/* <h3>{postBody.node.frontmatter.title}</h3> */}
-              <MDXRenderer>
-                {postBody.node.body}
-              </MDXRenderer>
+              <section  className="post-wrapper">
+                <MDXRenderer>
+                  {postBody.node.body}
+                </MDXRenderer>
+              </section>
             </article>
             {/* <p className="fun-style">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p> */}
           </div>
