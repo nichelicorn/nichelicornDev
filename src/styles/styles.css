@@ -3,15 +3,18 @@ html,
 body {
   /* font-family: Futura, sans-serif; */
   font-family: "Verdana", sans-serif;
+  font-kerning: auto;
   font-size: 1.1rem;
+  font-weight: normal;
   line-height: 150%;
+  hyphens: auto;
   margin: 0;
+  overflow-y: scroll;
   text-align: left;
 }
 
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
   /* `text-size-adjust` is experimental and not supported; altering this property overrides default browser text adjustment  */
   /* -ms-text-size-adjust: 100%; */
   /* -webkit-text-size-adjust: 100%; */
@@ -24,9 +27,6 @@ body {
   /* -ms-font-feature-settings: "kern", "liga", "clig", "calt"; */
   /* -webkit-font-feature-settings: "kern", "liga", "clig", "calt"; */
   /* `font-kerning` determins the spacing between characters in lines of text; setting to `auto`allows the browser to determine if kerning is necessary; other setting may cause small text to become unreadable */
-  font-kerning: auto;
-  font-weight: normal;
-  hyphens: auto;
   margin: 0;
   /* this `word-wrap` property will determine how a word-break will appear on the screen; going to switch this to a `hyphens` property to include the punctuation */
   /* word-wrap: break-word; */
@@ -37,6 +37,17 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
+/* a:visited {
+  color: inherit;
+} */
+img {
+  border-style: none;
+  max-width: 100%;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+/* 🖋 Typograpical styles */
 a {
   color: inherit;
   font-family: 'Courier New', Courier, monospace;
@@ -54,14 +65,9 @@ a:hover {
   text-shadow: #cd8604 7px 7px 13px;
 }
 
-/* a:visited {
-  color: inherit;
-} */
-
 p {
   padding: .5rem;
 }
-
 
 code,
 pre {
@@ -78,28 +84,6 @@ pre {
   padding: 1rem;
 }
 
-img {
-  border-style: none;
-  max-width: 100%;
-  margin: .5rem;
-  padding: .5rem;
-}
-
-/* 📄 Layout styles */
-.layout-main {
-  /* border: 1px solid fuchsia; */
-  display: flex;
-  flex-direction: column;
-  min-height: 75vh;
-  padding: 1rem;
-  margin: 1rem;
-}
-
-
-
-
-
-/* 🖋 Typograpical styles */
 .h-one-styles {
   font-family: "Beth Ellen";
   text-align: center;
@@ -109,41 +93,29 @@ img {
   font-size: 300%;
 }
 
-/* code {
-  background-color: #d3d3d3;
-  font-family: 'Courier New', serif;
-  font-weight: bold;
-  padding: .2rem;
-} */
+/* 💅 Page and component styles */
 
-/* code,
-pre {
-  background-color: #d3d3d3;
-  font-family: 'Courier New', serif;
-  font-weight: bold;
+/* 📄 Layout styles */
+.layout-main {
+  /* border: 1px solid fuchsia; */
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
-  padding: .5rem;
-  white-space: pre-wrap;
-}
-
-pre {
-  margin: 1rem;
+  min-height: 75vh;
   padding: 1rem;
-} */
+}
 
 .fun-style {
   background-color: #00412879;
   border-radius: 1rem;
   color: #f8f8ff;
   font-family: "Beth Ellen";
-  /* font-size: 115%; */
   padding: 1rem;
 }
 
 /* 💀 Header styles */
 .hdr {
   background-color: #000000;
-  /* background-color:rosybrown; */
   color: #f8f8ff;
   margin: 0;
   padding: 1rem;
@@ -167,11 +139,8 @@ pre {
 }
 
 [aria-current] {
-  /* font-family: "Beth Ellen"; */
   color: #f8f8ff;
   font-size: 2rem;
-  /* padding: .5rem; */
-  /* text-decoration: none; */
   /* text-shadow: deeppink 10px 0 39px; */
   text-shadow: #cd8604 7px 7px 13px;
 }
@@ -179,9 +148,7 @@ pre {
 /* 🛼 Footer styles */
 .ftr {
   background-color: black;
-  /* background-color: rosybrown; */
   color: #f8f8ff;
-  /* font-family: "Beth Ellen"; */
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   margin: 0;
@@ -196,7 +163,7 @@ pre {
   padding: .5rem;
 }
 
-/* 📑 Page styles */
+/* 📑 Page and Component styles */
 
 /* 🏡 Home page styles */
 .home-wrapper {
@@ -210,33 +177,36 @@ pre {
 }
 
 .main-content {
-  /* border: 1px solid aquamarine; */
+  /* border: 10px solid aquamarine; */
   width: 70%;
-  /* padding: 1rem; */
-  /* margin: 1rem; */
+  padding: 1rem;
 }
 
-/* 🥗 Sidebar styles */
+.new-post {
+  border: 10px solid black;
+  border-radius: 17px;
+}
+
+/* 🥗 SideContent styles */
 .side-content {
   background-color:#000000;
   border-radius: .5rem;
   /* border: 1px solid lime; */
-  margin: 1rem;
   padding: 1rem;
   width: 30%;
 }
 
-.side-header {
+/* .side-header {
   font-size: 450%;
-}
+} */
 
 .twitter-timeline {
   color: #f8f8ff;
 }
 
-.rName {
+/* .rName {
   font-family: "Beth Ellen", cursive;
-}
+} */
 
 /* 📌 Post styles */
 .post-wrapper {
@@ -244,9 +214,9 @@ pre {
 }
 
 .post-styles {
-  padding: 1rem;
   border: 1px solid #a9a9a9;
   border-radius: 1.5rem;
+  padding: 1rem;
   text-align: left;
 }
 
