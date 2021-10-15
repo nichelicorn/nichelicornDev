@@ -26,17 +26,18 @@ const PicklePage = () => {
     <section className="card-container">
       {
         onlyRepos.map(repo => {
-          {/* if (repo.language) { */}
+          if (repo.language) {
             return (
               <article className="pickle-card">
                 <h3 className="h-one-styles">{repo.name}</h3>
                 <h4>{repo.description}</h4>
+                {/* <p>Visit <a href="{repo.html_url}">{repo.name}</a> on GitHub</p> */}
                 <Link to={repo.html_url}>{repo.name} on GitHub</Link>
                 <p>Most recent update : {repo.updated_at}</p>
                 <p>Language: {repo.language}</p>
               </article>
             );
-          {/* } */}
+          }
         })
       };
     </section>
