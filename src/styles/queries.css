@@ -5,10 +5,6 @@
     font-size: 100%;
   }
 
-  code {
-    
-  }
-
   .layout-main {
     background-color: #7fffd4;
   }
@@ -23,7 +19,7 @@
   }
 
   .home-wrapper,
-  aboutWrapper {
+  .aboutWrapper {
     flex-wrap: wrap;
   }
 
@@ -68,8 +64,8 @@
   }
 
   .about-wrapper {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }
 
@@ -80,11 +76,9 @@
   }
 
   .hdr {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-start; */
-    /* justify-content: space-evenly; */
-    align-items: center;
   }
 
   .name-tile {
@@ -124,8 +118,6 @@
   }
 
   .side-content {
-    /* width: 35%; */
-    /* height: 50rem; */
     width: 30%;
   }
 
