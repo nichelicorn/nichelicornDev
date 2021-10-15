@@ -21,3 +21,23 @@ NOTES
   * `slug` is the file name; allows a Link to be created to open the file
   * 📍 When working with components, use the `useStaticQuery` hook
 * 📍 Use an `export const query` page query when working on a page
+
+## CSS
+✨ CSS is awesome!
+
+### CSS Extensions
+* Browsers have specialized CSS extensions; these set styles specifically for the defined browser and do not work cross-browser
+  * `-moz-` extensions are compatible with Mozilla browsers (Firefox and sisters)
+  * `-ms-` extensions are compatible with Microsoft browsers (Edge, IE)
+  * - `-webkit-` extensions are compatible with Safari and Chrome; most of these properties will also work with an `-apple-` prefix
+
+### Refactoring CSS file
+* Decide how to structure this file
+  * Currently, have two files utilized
+    * styles.css - this contains all standard page styles
+    * queries.css - this contains all styles to be applied to certain media screen sizes
+* Would like to utilize [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) using the docs as a guide
+
+### CSS properties
+* `overflow-y: scroll;` : `overflow-y` sets what a user sees when content overflow's an element's bottom edges; `scroll` allows a user to scroll through the content within the element's viewable area
+* 

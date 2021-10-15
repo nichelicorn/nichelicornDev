@@ -1,0 +1,251 @@
+/* 🎨 CSS custom properties */
+:root {
+  /* Color properties */
+  --dark-color: #000000;
+  --med-color: #333333;
+  --light-color: #f8f8ff;
+  --dark-accent: #c15b02;
+  --med-accent: #e4812a;
+  --light-accent: #c7710145;
+  --code-color: #d3d3d3;
+  --hover-shadow: #cd8604 7px 7px 13px;
+  --shadow-border: 10px solid #fde53155;
+  /* Typography properties */
+  --reg-font: Verdana, Geneva, Tahoma, sans-serif;
+  --link-font: "Courier New", Courier, monospace;
+  --fancy-font: "Beth Ellen", cursive;
+  /* Spacing properties */
+  --sm-space: .5rem;
+  --med-space: 1rem;
+  --lrg-space: 2rem;
+}
+
+/* 🎨 Element styles */
+html, 
+body {
+  font-family: var(--reg-font);
+  font-kerning: auto;
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 150%;
+  hyphens: auto;
+  margin: 0;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; 
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  margin: var(--sm-space);
+  padding: var(--sm-space);
+}
+
+/* 🖋 Typograpical styles */
+a {
+  color: inherit;
+  font-family: var(--link-font);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: var(--dark-accent);
+  text-shadow: var(--hover-shadow);
+}
+
+p {
+  padding: var(--sm-space);
+}
+
+code,
+pre {
+  background-color: var(--code-color);
+  font-family: var(--link-font);
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+
+pre {
+  margin: var(--med-space);
+  padding: var(--med-space);
+}
+
+.h-one-styles {
+  font-family: var(--fancy-font);
+  text-align: center;
+}
+
+.illuminated {
+  font-size: 300%;
+}
+
+/* 💅 Page and component styles */
+
+/* 📄 Layout styles */
+.layout-main {
+  display: flex;
+  flex-direction: column;
+  margin: var(--med-space);
+  min-height: 75vh;
+  padding: var(--med-space);
+}
+
+.card-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+/* .fun-style {
+  background-color: #00412879;
+  border-radius: 1rem;
+  color: var(--light-color));
+  font-family: "Beth Ellen";
+  padding: 1rem;
+} */
+
+/* 💀 Header styles */
+.hdr {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: var(--med-space);
+  text-align: center;
+  width: auto;
+}
+
+.name-tile {
+  align-items: center;
+  font-family: var(--fancy-font);
+  margin: 0;
+  padding: var(--sm-space);
+}
+
+.hdr-list {
+  list-style: none;
+  margin: 0;
+  padding: var(--sm-space);
+  text-decoration: none;
+}
+
+[aria-current] {
+  color: var(--light-color);
+  font-size: var(--lrg-space);
+  text-shadow: var(--hover-shadow);
+}
+
+/* 🛼 Footer styles */
+.ftr {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--link-font);
+  font-weight: bold;
+  padding: var(--med-space);
+  text-align: center;
+  width: auto;
+}
+
+.ftr > p {
+  margin: 0;
+  padding: var(--sm-space);
+}
+
+/* 🏡 Home page styles */
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.all-home-content {
+  display: flex;
+}
+
+.main-content {
+  padding: var(--med-space);
+  width: 70%;
+}
+
+.new-post {
+  border: 10px solid var(--dark-color);
+  border-radius: 17px;
+}
+
+/* 🥗 SideContent styles */
+.side-content {
+  background-color: var(--dark-color);
+  border-radius: var(--sm-space);
+  padding: var(--med-space);
+  width: 30%;
+}
+
+.twitter-timeline {
+  color: var(--light-color);
+}
+
+/* 📌 Post styles */
+.post-wrapper {
+  padding: 1rem 7rem;
+  text-align: left;
+}
+
+.post-card {
+  /* will contain styles for post cards */
+}
+
+.post-styles {
+  border: 1px solid #a9a9a9;
+  border-radius: 1.5rem;
+  padding: 0 10rem;
+  text-align: left;
+}
+
+.tldr {
+  background-color: var(--dark-accent);
+  border-radius: .3rem;
+  color: var(--light-color);
+  font-family: var(--link-font);
+  font-weight: bold;
+  margin: 0 3rem;
+  padding: 1.5rem;
+  text-align: justify;
+}
+
+.tldr > code {
+  color: var(--dark-color);
+}
+
+.post-resources {
+  background-color: var(--med-accent);
+  border-radius: var(--sm-space);
+  margin: 0 3rem 2rem 3rem;
+  padding: var(--med-space);
+}
+
+/* 🥒 Pickle (portfolio) styles */
+.pickle-card {
+  background-color: var(--light-accent);
+  border: var(--shadow-border);
+  margin: var(--med-space);
+  padding: var(--lrg-space);
+  width: 70%;
+}
+
+/* 🌮 About page styles */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}

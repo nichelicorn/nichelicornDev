@@ -25,50 +25,42 @@ const Home = () => {
   }
 `);
 
-// console.log("all data <>>>", data);
+console.log("🌊 Welcome to nichelicorn.dev! ⛅️");
 
 const mostRecent = data.allMdx.edges.sort((a, b) => {
   const aDate = a.node["frontmatter"].date;
   const bDate = b.node["frontmatter"].date;
-  if (aDate > bDate) {
-    // console.log("a node <>>>", a.node);
-    return -1;
-  } 
-  else {
-    // console.log("b node <>>>", b.node)
-    return 1;
-  }
+  // if (aDate > bDate) {
+  //   return -1;
+  // } 
+  // else {
+  //   return 1;
+  // };
+  return (aDate > bDate) ? -1 : 1;
 });
 
-// console.log("find most recent blog post <>>>", mostRecent[0]);
 const postBody = mostRecent[0];
-// console.log("postBody <>>>", postBody);
 
-// console.log("id <>>>", postBody.node.id);
-
-  return (
-    <section className="homeWrapper">
-        <title>Home | Nichele D</title>
-        <div className="allHomeContent">
-          <div className="mainContent">
-            <h1 className="hOneStyles">Welcome to nichelicorn.dev‍</h1>
-            <p>Below, a recent post. 🏕</p>
-
-            <article key={postBody.node.id} className="new-post">
-              {/* <h3>{postBody.node.frontmatter.title}</h3> */}
+return (
+  <section className="home-wrapper">
+      <title>Home | Nichele D</title>
+      <div className="all-home-content">
+        <div className="main-content">
+          <h1 className="h-one-styles">Welcome to nichelicorn.dev‍</h1>
+          <p>Below, you will find a recent post. 🏕</p>
+          <article key={postBody.node.id} className="new-post">
+            <section  className="post-wrapper">
               <MDXRenderer>
                 {postBody.node.body}
               </MDXRenderer>
-            </article>
-
-
-            {/* <p className="illuminated">🚧🏗</p><p>Portfolio page under construction! Check back soon for updates</p><p className="illuminated"> 👷‍♀️⚙️</p> */}
-            {/* <p className="funStyle">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p> */}
-          </div>
-          <SideContent />
+            </section>
+          </article>
+          {/* <p className="fun-style">🥕 Click the links in the header to check out more on nichelicorn.dev! 🐇</p> */}
         </div>
+        <SideContent />
+      </div>
     </section>
   )
-}
+};
 
 export default Home;

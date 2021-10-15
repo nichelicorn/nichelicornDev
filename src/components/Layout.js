@@ -18,11 +18,11 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
   return (
-    <section className="layoutWrapper">
+    <section className="layout-wrapper">
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       <Header />
-      <div className="contentWrapper">
-        <main className="layoutMain">{children}</main>
+      <div className="content-wrapper">
+        <main className="layout-main">{children}</main>
       </div>
       <Footer />
     </section>
