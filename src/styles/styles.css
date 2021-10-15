@@ -1,5 +1,6 @@
 /* 🎨 CSS custom properties */
 :root {
+  /* Color properties */
   --dark-color: #000000;
   --med-color: #333333;
   --light-color: #f8f8ff;
@@ -9,14 +10,16 @@
   --code-color: #d3d3d3;
   --hover-shadow: #cd8604 7px 7px 13px;
   --shadow-border: 10px solid #fde53155;
+  /* Typography properties */
+  --reg-font: Verdana, Geneva, Tahoma, sans-serif;
+  --link-font: 'Courier New', Courier, monospace;
+  --fancy-font: "Beth Ellen", cursive;
 }
-
 
 /* 🎨 Element styles */
 html, 
 body {
-  /* font-family: Futura, sans-serif; */
-  font-family: "Verdana", sans-serif;
+  font-family: var(--reg-font);
   font-kerning: auto;
   font-size: 1.1rem;
   font-weight: normal;
@@ -47,7 +50,7 @@ img {
 /* 🖋 Typograpical styles */
 a {
   color: inherit;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--link-font);
   font-weight: bold;
   text-decoration: none;
 }
@@ -55,7 +58,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: var(--med-accent);
+  color: var(--dark-accent);
   text-shadow: var(--hover-shadow);
 }
 
@@ -66,7 +69,7 @@ p {
 code,
 pre {
   background-color: var(--code-color);
-  font-family: 'Courier New', serif;
+  font-family: var(--link-font);
   font-weight: bold;
   white-space: pre-wrap;
 }
@@ -77,7 +80,7 @@ pre {
 }
 
 .h-one-styles {
-  font-family: "Beth Ellen";
+  font-family: var(--fancy-font);
   text-align: center;
 }
 
@@ -122,7 +125,7 @@ pre {
 
 .name-tile {
   align-items: center;
-  font-family: "Beth Ellen";
+  font-family: var(--fancy-font);
   margin: 0;
   padding: .5rem;
 }
@@ -144,7 +147,7 @@ pre {
 .ftr {
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--link-font);
   font-weight: bold;
   margin: 0;
   padding: 1rem;
@@ -212,7 +215,7 @@ pre {
   background-color: var(--dark-accent);
   border-radius: .3rem;
   color: var(--light-color);
-  font-family: "Courier New", serif;
+  font-family: var(--link-font);
   font-weight: bold;
   margin: 0 3rem;
   padding: 1.5rem;
