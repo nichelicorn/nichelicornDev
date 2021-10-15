@@ -1,13 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import styled from "styled-components";
 import Layout from "../../components/Layout";
-
-const StyledArticle = styled.article`
-  padding: 20px;
-  border: 2px solid turquoise;
-  margin: 5px;
-`;
 
 const PostsPage = ({ data: { allMdx } }) => {
   // console.log("PostsPage allMdx <>>>", allMdx);
