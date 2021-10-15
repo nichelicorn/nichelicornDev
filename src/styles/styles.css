@@ -186,7 +186,7 @@ pre {
 /* 🥗 SideContent styles */
 .side-content {
   background-color: var(--dark-color);
-  border-radius: .5rem;
+  border-radius: var(--sm-space);
   padding: var(--med-space);
   width: 30%;
 }
@@ -197,7 +197,7 @@ pre {
 
 /* 📌 Post styles */
 .post-wrapper {
-  padding: var(--med-space) 7rem;
+  padding: 1rem 7rem;
   text-align: left;
 }
 
