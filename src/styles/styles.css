@@ -105,6 +105,12 @@ pre {
   padding: 1rem;
 }
 
+.card-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
 .fun-style {
   background-color: #00412879;
   border-radius: 1rem;
@@ -253,15 +259,7 @@ pre {
 }
 
 /* 🥒 Pickle (portfolio) styles */
-.card-container,
-.pickle-jar {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.pickle-card,
-.rCard {
+.pickle-card {
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -273,8 +271,6 @@ pre {
   padding: 2rem;
   width: 70%;
 }
-
-
 
 /* 🌮 About page styles */
 .about-wrapper {

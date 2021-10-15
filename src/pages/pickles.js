@@ -72,7 +72,7 @@ const PicklePage = () => {
     } */}
 
     <h2 className="h-one-styles">Portfolio</h2>
-    <section className="pickle-jar">
+    <section className="card-container">
       {
         onlyRepos.map(repo => {
           if (repo.language) {
