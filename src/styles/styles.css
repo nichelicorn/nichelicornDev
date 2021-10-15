@@ -12,8 +12,12 @@
   --shadow-border: 10px solid #fde53155;
   /* Typography properties */
   --reg-font: Verdana, Geneva, Tahoma, sans-serif;
-  --link-font: 'Courier New', Courier, monospace;
+  --link-font: "Courier New", Courier, monospace;
   --fancy-font: "Beth Ellen", cursive;
+  /* Spacing properties */
+  --sm-space: .5rem;
+  --med-space: 1rem;
+  --lrg-space: 2rem;
 }
 
 /* 🎨 Element styles */
@@ -43,8 +47,8 @@ body {
 img {
   border-style: none;
   max-width: 100%;
-  margin: .5rem;
-  padding: .5rem;
+  margin: var(--sm-space);
+  padding: var(--sm-space);
 }
 
 /* 🖋 Typograpical styles */
@@ -63,7 +67,7 @@ a:hover {
 }
 
 p {
-  padding: .5rem;
+  padding: var(--sm-space);
 }
 
 code,
@@ -75,8 +79,8 @@ pre {
 }
 
 pre {
-  margin: 1rem;
-  padding: 1rem;
+  margin: var(--med-space);
+  padding: var(--med-space);
 }
 
 .h-one-styles {
@@ -94,9 +98,9 @@ pre {
 .layout-main {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: var(--med-space);
   min-height: 75vh;
-  padding: 1rem;
+  padding: var(--med-space);
 }
 
 .card-container {
@@ -117,8 +121,7 @@ pre {
 .hdr {
   background-color: var(--dark-color);
   color: var(--light-color);
-  margin: 0;
-  padding: 1rem;
+  padding: var(--med-space);
   text-align: center;
   width: auto;
 }
@@ -127,19 +130,19 @@ pre {
   align-items: center;
   font-family: var(--fancy-font);
   margin: 0;
-  padding: .5rem;
+  padding: var(--sm-space);
 }
 
 .hdr-list {
   list-style: none;
   margin: 0;
-  padding: .5rem;
+  padding: var(--sm-space);
   text-decoration: none;
 }
 
 [aria-current] {
   color: var(--light-color);
-  font-size: 2rem;
+  font-size: var(--lrg-space);
   text-shadow: var(--hover-shadow);
 }
 
@@ -149,16 +152,14 @@ pre {
   color: var(--light-color);
   font-family: var(--link-font);
   font-weight: bold;
-  margin: 0;
-  padding: 1rem;
+  padding: var(--med-space);
   text-align: center;
   width: auto;
 }
 
 .ftr > p {
   margin: 0;
-  font-size: medium;
-  padding: .5rem;
+  padding: var(--sm-space);
 }
 
 /* 🏡 Home page styles */
@@ -173,7 +174,7 @@ pre {
 }
 
 .main-content {
-  padding: 1rem;
+  padding: var(--med-space);
   width: 70%;
 }
 
@@ -186,7 +187,7 @@ pre {
 .side-content {
   background-color: var(--dark-color);
   border-radius: .5rem;
-  padding: 1rem;
+  padding: var(--med-space);
   width: 30%;
 }
 
@@ -196,7 +197,7 @@ pre {
 
 /* 📌 Post styles */
 .post-wrapper {
-  padding: 1rem 7rem;
+  padding: var(--med-space) 7rem;
   text-align: left;
 }
 
@@ -228,17 +229,17 @@ pre {
 
 .post-resources {
   background-color: var(--med-accent);
-  border-radius: .5rem;
+  border-radius: var(--sm-space);
   margin: 0 3rem 2rem 3rem;
-  padding: 1rem;
+  padding: var(--med-space);
 }
 
 /* 🥒 Pickle (portfolio) styles */
 .pickle-card {
   background-color: var(--light-accent);
   border: var(--shadow-border);
-  margin: 1rem;
-  padding: 2rem;
+  margin: var(--med-space);
+  padding: var(--lrg-space);
   width: 70%;
 }
 
