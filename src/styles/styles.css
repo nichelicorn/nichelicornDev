@@ -55,10 +55,8 @@ a {
 a:active,
 a:focus,
 a:hover {
-  /* color: #c77101; */
   color: var(--med-accent);
   text-shadow: var(--hover-shadow);
-  /* text-shadow: #cd8604 7px 7px 13px; */
 }
 
 p {
@@ -68,7 +66,6 @@ p {
 code,
 pre {
   background-color: var(--code-color);
-  /* background-color: #d3d3d3; */
   font-family: 'Courier New', serif;
   font-weight: bold;
   white-space: pre-wrap;
@@ -92,7 +89,6 @@ pre {
 
 /* 📄 Layout styles */
 .layout-main {
-  /* border: 1px solid fuchsia; */
   display: flex;
   flex-direction: column;
   margin: 1rem;
@@ -106,18 +102,18 @@ pre {
   justify-content: center;
 }
 
-.fun-style {
+/* .fun-style {
   background-color: #00412879;
   border-radius: 1rem;
   color: var(--light-color));
   font-family: "Beth Ellen";
   padding: 1rem;
-}
+} */
 
 /* 💀 Header styles */
 .hdr {
   background-color: var(--dark-color);
-  color: #f8f8ff;
+  color: var(--light-color);
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -132,7 +128,6 @@ pre {
 }
 
 .hdr-list {
-  color: var(--light-color);
   list-style: none;
   margin: 0;
   padding: .5rem;
@@ -142,8 +137,6 @@ pre {
 [aria-current] {
   color: var(--light-color);
   font-size: 2rem;
-  /* text-shadow: deeppink 10px 0 39px; */
-  /* text-shadow: #cd8604 7px 7px 13px; */
   text-shadow: var(--hover-shadow);
 }
 
@@ -177,8 +170,8 @@ pre {
 }
 
 .main-content {
-  width: 70%;
   padding: 1rem;
+  width: 70%;
 }
 
 .new-post {
@@ -216,7 +209,6 @@ pre {
 }
 
 .tldr {
-  /* background-color:#008b8b; */
   background-color: var(--dark-accent);
   border-radius: .3rem;
   color: var(--light-color);
@@ -232,7 +224,6 @@ pre {
 }
 
 .post-resources {
-  /* background-color:#f0fff0; */
   background-color: var(--med-accent);
   border-radius: .5rem;
   margin: 0 3rem 2rem 3rem;
@@ -243,7 +234,6 @@ pre {
 .pickle-card {
   background-color: var(--light-accent);
   border: var(--shadow-border);
-  /* border-radius: .5rem; */
   margin: 1rem;
   padding: 2rem;
   width: 70%;
