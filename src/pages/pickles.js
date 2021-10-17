@@ -18,10 +18,12 @@ const PicklePage = () => {
 
   const onlyRepos = Object.values(nichelicornRepoObj);
 
-  const displayRepos = onlyRepos.filter(repo => {
-    if (repo.description) {
-      return repo;
-    };
+  const filteredRepos = onlyRepos.filter(repo => {
+    if (repo.description) return repo;
+  });
+
+  const displayRepos = filteredRepos.sort((a, b) => {
+    return (a.updated_at > b.updated_at) ? -1 : 1;
   });
 
   console.log("👻 displayRepos <>>>", displayRepos);
@@ -38,7 +40,7 @@ const PicklePage = () => {
               <h4>{repo.description}</h4>
               {/* <p>Visit <a href="{repo.html_url}">{repo.name}</a> on GitHub</p> */}
               <Link to={repo.html_url}>{repo.name} on GitHub</Link>
-              <p>Most recent update : {repo.updated_at}</p>
+              {/* <p>Most recent update : {repo.updated_at}</p> */}
               <p>Primary language: {repo.language}</p>
             </article>
           );        
