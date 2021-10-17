@@ -45,12 +45,10 @@ const PicklePage = () => {
             </article>
           );        
         })
-      };
+      }
     </section>
   </Layout>
   );
 };
 
 export default PicklePage;
-
-
