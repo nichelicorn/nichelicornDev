@@ -20,11 +20,13 @@ const PicklePage = () => {
   // const filteredRepos = onlyRepos.filter(repo => {
   //   if (repo.description) return repo;
   // });
-  const filteredRepos = onlyRepos.filter(repo => repo.description);
+  // const filteredRepos = onlyRepos.filter(repo => repo.description);
 
-  const displayRepos = filteredRepos.sort((a, b) => {
-    return (a.updated_at > b.updated_at) ? -1 : 1;
-  });
+  // const displayRepos = filteredRepos.sort((a, b) => {
+  //   return (a.updated_at > b.updated_at) ? -1 : 1;
+  // });
+
+  const displayRepos = onlyRepos.filter(repo => repo.description).sort((a, b) => (a.updated_at > b.updated_at) ? -1 : 1);
 
   console.log("👻 displayRepos <>>>", displayRepos);
 
@@ -35,7 +37,7 @@ const PicklePage = () => {
       {
         displayRepos.map(repo => {
           return (
-            <article className="pickle-card">
+            <article key={repo.id} className="pickle-card">
               <h3 className="h-one-styles">{repo.name}</h3>
               <h4>{repo.description}</h4>
               {/* <p>Visit <a href="{repo.html_url}">{repo.name}</a> on GitHub</p> */}
