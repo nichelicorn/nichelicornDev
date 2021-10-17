@@ -1,7 +1,7 @@
 // Imports
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 const PicklePage = () => {
 
