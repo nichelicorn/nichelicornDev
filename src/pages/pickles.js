@@ -40,9 +40,9 @@ const PicklePage = () => {
             <article key={repo.id} className="pickle-card">
               <h3 className="h-one-styles">{repo.name}</h3>
               <h4>{repo.description}</h4>
-              {/* <p>Visit <a href="{repo.html_url}">{repo.name}</a> on GitHub</p> */}
-              <Link to={repo.html_url}>{repo.name} on GitHub</Link>
-              {/* <p>Most recent update : {repo.updated_at}</p> */}
+              {/* <Link to={repo.html_url}>{repo.name} on GitHub</Link> */}
+              <p>See<a href={repo.html_url}> {repo.name} </a> on GitHub!</p>
+              <p>Most recent update : {repo.updated_at}</p>
               <p>Primary language: {repo.language}</p>
             </article>
           );        
