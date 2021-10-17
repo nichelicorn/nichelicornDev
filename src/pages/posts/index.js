@@ -8,7 +8,8 @@ const PostsPage = ({ data: { allMdx } }) => {
     <Layout>
       <h2 className="h-one-styles">Posts</h2>
       <section className="card-container">
-        {allMdx.edges.map(({ node }) => {
+        {
+          allMdx.edges.map(({ node }) => {
           return (
             <article key={node.id} className="post-card pickle-card">
             <h3>
@@ -21,7 +22,7 @@ const PostsPage = ({ data: { allMdx } }) => {
               {/* <Link to={`/${node.slug}`}>View Post</Link> */}
             </article>
           );
-        })}
+        })};
       </section>
     </Layout>
   );
