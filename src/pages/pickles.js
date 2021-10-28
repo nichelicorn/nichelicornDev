@@ -13,9 +13,10 @@ const PicklePage = () => {
       .then(resultData => {
         setNichelicornRepoObj(resultData) // sets repo data
       })
+      .catch(err => console.log("👻 Error!", err))
   }, []);
 
-  const onlyRepos = Object.values(nichelicornRepoObj);
+  const onlyRepos = Object.values(nichelicornRepoObj) || [];
 
   // const filteredRepos = onlyRepos.filter(repo => {
   //   if (repo.description) return repo;
@@ -29,6 +30,23 @@ const PicklePage = () => {
   const displayRepos = onlyRepos.filter(repo => repo.description).sort((a, b) => (a.updated_at > b.updated_at) ? -1 : 1);
 
   console.log("👻 displayRepos <>>>", displayRepos);
+
+  console.log("????", displayRepos.length === 0);
+
+  if (displayRepos.length === 0) {
+    return (
+      <Layout>
+        <section className="card-container">
+          <h2 className="h-one-styles">Portfolio</h2>
+          <article key="error" className="pickle-card">
+            <h3 className="h-one-styles">👻 Error!</h3>
+            <h4>Portfolio information not currently available.</h4>
+            <p>Please visit <a href="https://github.com/nichelicorn">GitHub</a> to see my latest projects!</p>
+          </article>
+        </section>
+      </Layout>
+    );
+  };
 
   return (
   <Layout>
