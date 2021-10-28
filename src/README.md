@@ -41,3 +41,6 @@ NOTES
 ### CSS properties
 * `overflow-y: scroll;` : `overflow-y` sets what a user sees when content overflow's an element's bottom edges; `scroll` allows a user to scroll through the content within the element's viewable area
 * 
+
+## Fetch API
+* [`fetch()` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
