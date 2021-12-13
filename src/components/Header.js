@@ -5,19 +5,19 @@ import { Link } from "gatsby";
 // Component to render
 const Header = () => {
   return (
-    <header className="hdr">
+    <header className="hdr" id="hdr" tabindex="0">
       <h2 className="name-tile">· Nichele Dunn ·</h2>
       <ul  className="hdr-list">
-        <li>
+        <li tabindex="0">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li tabindex="0">
           <Link to="/posts">Posts</Link>
         </li>
-        <li>
+        <li tabindex="0">
           <Link to="/pickles">Portfolio</Link>
         </li>
-        <li>
+        <li tabindex="0">
           <Link to="/about">About</Link>
         </li>
       </ul>

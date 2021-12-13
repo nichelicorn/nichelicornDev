@@ -249,3 +249,8 @@ pre {
   flex-direction: column;
   overflow: scroll;
 }
+
+/* 👻 Pseudo styles */
+:focus {
+  background-color: deeppink;
+}
