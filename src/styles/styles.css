@@ -252,5 +252,5 @@ pre {
 
 /* 👻 Pseudo styles */
 :focus {
-  background-color: deeppink;
+  /* background-color: deeppink; */
 }
