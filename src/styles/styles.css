@@ -1,3 +1,6 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
 /* 🎨 CSS custom properties */
 :root {
   /* Color properties */
@@ -11,9 +14,10 @@
   --hover-shadow: #cd8604 7px 7px 13px;
   --shadow-border: 10px solid #fde53155;
   /* Typography properties */
-  --reg-font: Verdana, Geneva, Tahoma, sans-serif;
-  --link-font: "Courier New", Courier, monospace;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --typewriter-font: "Courier New", Courier, monospace;
   --fancy-font: "Beth Ellen", cursive;
+  --upper-font: "Unica One", cursive;
   /* Spacing properties */
   --sm-space: .5rem;
   --med-space: 1rem;
@@ -23,7 +27,7 @@
 /* 🎨 Element styles */
 html, 
 body {
-  font-family: var(--reg-font);
+  font-family: var(--main-font);
   font-kerning: auto;
   font-size: 1.1rem;
   font-weight: normal;
@@ -54,7 +58,7 @@ img {
 /* 🖋 Typograpical styles */
 a {
   color: inherit;
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   text-decoration: none;
 }
@@ -67,13 +71,14 @@ a:hover {
 }
 
 p {
-  padding: var(--sm-space);
+  /* padding: var(--sm-space); */
+  margin: 0;
 }
 
 code,
 pre {
   background-color: var(--code-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   white-space: pre-wrap;
 }
@@ -150,7 +155,7 @@ pre {
 .ftr {
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   padding: var(--med-space);
   text-align: center;
@@ -216,7 +221,7 @@ pre {
   background-color: var(--dark-accent);
   border-radius: .3rem;
   color: var(--light-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   margin: 0 3rem;
   padding: 1.5rem;
@@ -243,9 +248,50 @@ pre {
   width: 70%;
 }
 
+/* 🖋 Resume styles */
+.cv-text {
+  font-family: var(--typewriter-font);
+  margin: 0;
+}
+
+.cv-hdr,
+.cv-main-hdr {
+  font-family: var(--upper-font);
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cv-sub-hdr {
+  margin: .5rem 0;
+  text-transform: uppercase;
+}
+
+.cv-sec {
+  background-color: lightgray;
+  margin: 1rem 0 1rem 0;
+}
+
+.proj-wrap,
+.edu-wrap {
+  /* background-color: ghostwhite; */
+}
+
+.proj-card,
+.edu-card {
+  margin: 1rem 0;
+  background-color: ghostwhite;
+}
+
+
 /* 🌮 About page styles */
 .about-wrapper {
   display: flex;
   flex-direction: column;
   overflow: scroll;
+}
+
+/* 👻 Pseudo styles */
+:focus {
+  /* background-color: deeppink; */
 }
