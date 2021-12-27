@@ -1,3 +1,6 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
 /* 🎨 CSS custom properties */
 :root {
   /* Color properties */
@@ -11,9 +14,10 @@
   --hover-shadow: #cd8604 7px 7px 13px;
   --shadow-border: 10px solid #fde53155;
   /* Typography properties */
-  --reg-font: Verdana, Geneva, Tahoma, sans-serif;
-  --link-font: "Courier New", Courier, monospace;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --typewriter-font: "Courier New", Courier, monospace;
   --fancy-font: "Beth Ellen", cursive;
+  --upper-font: font-family: 'Unica One', cursive;
   /* Spacing properties */
   --sm-space: .5rem;
   --med-space: 1rem;
@@ -23,7 +27,7 @@
 /* 🎨 Element styles */
 html, 
 body {
-  font-family: var(--reg-font);
+  font-family: var(--main-font);
   font-kerning: auto;
   font-size: 1.1rem;
   font-weight: normal;
@@ -54,7 +58,7 @@ img {
 /* 🖋 Typograpical styles */
 a {
   color: inherit;
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   text-decoration: none;
 }
@@ -73,7 +77,7 @@ p {
 code,
 pre {
   background-color: var(--code-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   white-space: pre-wrap;
 }
@@ -150,7 +154,7 @@ pre {
 .ftr {
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   padding: var(--med-space);
   text-align: center;
@@ -216,7 +220,7 @@ pre {
   background-color: var(--dark-accent);
   border-radius: .3rem;
   color: var(--light-color);
-  font-family: var(--link-font);
+  font-family: var(--typewriter-font);
   font-weight: bold;
   margin: 0 3rem;
   padding: 1.5rem;
@@ -241,6 +245,18 @@ pre {
   margin: var(--med-space);
   padding: var(--lrg-space);
   width: 70%;
+}
+
+/* 🖋 Resume styles */
+.cv-hdr,
+.main-hdr {
+  font-family: var(--upper-font);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sub-hdr {
+  text-transform: uppercase;
 }
 
 /* 🌮 About page styles */
