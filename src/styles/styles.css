@@ -1,5 +1,5 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 
 /* 🎨 CSS custom properties */
 :root {
@@ -17,7 +17,7 @@
   --main-font: Verdana, Geneva, Tahoma, sans-serif;
   --typewriter-font: "Courier New", Courier, monospace;
   --fancy-font: "Beth Ellen", cursive;
-  --upper-font: font-family: 'Unica One', cursive;
+  --upper-font: "Unica One", cursive;
   /* Spacing properties */
   --sm-space: .5rem;
   --med-space: 1rem;
@@ -71,7 +71,8 @@ a:hover {
 }
 
 p {
-  padding: var(--sm-space);
+  /* padding: var(--sm-space); */
+  margin: 0;
 }
 
 code,
@@ -248,16 +249,40 @@ pre {
 }
 
 /* 🖋 Resume styles */
+.cv-text {
+  font-family: var(--typewriter-font);
+  margin: 0;
+}
+
 .cv-hdr,
-.main-hdr {
+.cv-main-hdr {
   font-family: var(--upper-font);
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-.sub-hdr {
+.cv-sub-hdr {
+  margin: .5rem 0;
   text-transform: uppercase;
 }
+
+.cv-sec {
+  background-color: lightgray;
+  margin: 1rem 0 1rem 0;
+}
+
+.proj-wrap,
+.edu-wrap {
+  /* background-color: ghostwhite; */
+}
+
+.proj-card,
+.edu-card {
+  margin: 1rem 0;
+  background-color: ghostwhite;
+}
+
 
 /* 🌮 About page styles */
 .about-wrapper {
