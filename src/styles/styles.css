@@ -281,6 +281,9 @@ pre {
 .edu-card {
   background-color: ghostwhite;
   margin: 1rem 0;
+}
+
+.proj-card {
   padding: 0 1rem;
 }
 
