@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby";
 import Layout from "../../components/Layout";
 
 const PostsPage = ({ data: { allMdx } }) => {
-  // console.log("PostsPage allMdx <>>>", allMdx);
   return (
     <Layout>
       <h2 className="h-one-styles">Posts</h2>
@@ -17,15 +16,13 @@ const PostsPage = ({ data: { allMdx } }) => {
                 {node.frontmatter.title}
               </Link>
             </h3>
-              {/* <h2>{node.frontmatter.title}</h2> */}
               <p>{node.excerpt}</p>
-              {/* <Link to={`/${node.slug}`}>View Post</Link> */}
             </article>
-          );
-        })};
+          )
+        })}
       </section>
     </Layout>
-  );
+  )
 };
 
 export default PostsPage;
