@@ -211,8 +211,8 @@ pre {
 }
 
 .post-styles {
-  border: 1px solid #a9a9a9;
-  border-radius: 1.5rem;
+  /* border: 1px solid #a9a9a9; */
+  /* border-radius: 1.5rem; */
   padding: 0 10rem;
   text-align: left;
 }
@@ -223,7 +223,7 @@ pre {
   color: var(--light-color);
   font-family: var(--typewriter-font);
   font-weight: bold;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
   padding: 1.5rem;
   text-align: justify;
 }
@@ -235,7 +235,7 @@ pre {
 .post-resources {
   background-color: var(--med-accent);
   border-radius: var(--sm-space);
-  margin: 0 3rem 2rem 3rem;
+  margin: 2rem 3rem;
   padding: var(--med-space);
 }
 
