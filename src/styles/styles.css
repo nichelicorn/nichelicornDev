@@ -7,11 +7,11 @@
   --dark-color: #000000;
   --med-color: #333333;
   --light-color: #f8f8ff;
-  --dark-accent: #c15b02;
-  --med-accent: #e4812a;
-  --light-accent: #c7710145;
+  --dark-accent: #0d945c;
+  --med-accent: #01b368;
+  --light-accent: #9cf4cf;
   --code-color: #d3d3d3;
-  --hover-shadow: #cd8604 7px 7px 13px;
+  --hover-shadow: #01b368 7px 7px 13px;
   --shadow-border: 10px solid #fde53155;
   /* Typography properties */
   --main-font: Verdana, Geneva, Tahoma, sans-serif;
@@ -72,7 +72,7 @@ a:hover {
 
 p {
   /* padding: var(--sm-space); */
-  margin: 0;
+  /* margin: 0; */
 }
 
 code,
@@ -211,8 +211,8 @@ pre {
 }
 
 .post-styles {
-  border: 1px solid #a9a9a9;
-  border-radius: 1.5rem;
+  /* border: 1px solid #a9a9a9; */
+  /* border-radius: 1.5rem; */
   padding: 0 10rem;
   text-align: left;
 }
@@ -223,7 +223,7 @@ pre {
   color: var(--light-color);
   font-family: var(--typewriter-font);
   font-weight: bold;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
   padding: 1.5rem;
   text-align: justify;
 }
@@ -235,14 +235,14 @@ pre {
 .post-resources {
   background-color: var(--med-accent);
   border-radius: var(--sm-space);
-  margin: 0 3rem 2rem 3rem;
+  margin: 2rem 3rem;
   padding: var(--med-space);
 }
 
 /* 🥒 Pickle (portfolio) styles */
 .pickle-card {
-  background-color: var(--light-accent);
-  border: var(--shadow-border);
+  /* background-color: var(--light-accent); */
+  /* border: var(--shadow-border); */
   margin: var(--med-space);
   padding: var(--lrg-space);
   width: 70%;
@@ -279,8 +279,12 @@ pre {
 
 .proj-card,
 .edu-card {
-  margin: 1rem 0;
   background-color: ghostwhite;
+  margin: 1rem 0;
+}
+
+.proj-card {
+  padding: 0 1rem;
 }
 
 

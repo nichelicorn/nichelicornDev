@@ -24,6 +24,7 @@ const Resume = () => {
             <h4><a href="nichelicornDev">nichelicornDev</a></h4>
             <h5>A React-based project hub and journal. Posts discuss coding concepts, project development, and general interest subjects.</h5>
             <p>Tools and Tech : JavaScript, HTML, CSS, React, Gatsby</p>
+            <p>Hosted at : <a href="https://www.nichelicorn.dev/">nichelicorn.dev/</a></p>
             <p>GitHub Repository : <a href="https://github.com/nichelicorn/nichelicornDev">github.com/nichelicorn/nichelicornDev</a></p>
           </section>
           <section className="proj-card">
@@ -31,6 +32,7 @@ const Resume = () => {
             <h5>A hotel booking and management site. A custom API allows a user and manager to view room bookings.</h5>
             <p>Tools and Tech : JavaScript, HTML, SCSS / CSS, Mocha, Chai, Webpack</p>
             {/* <p>Hosted at : url</p> */}
+            {/* <p>Hosted site : <a href="https://github.com/nichelicorn/overlook-hotel">github.com/nichelicorn/overlook-hotel</a></p> */}
             <p>GitHub Repository : <a href="https://github.com/nichelicorn/overlook-hotel">github.com/nichelicorn/overlook-hotel</a></p>
           </section>
           </section>
